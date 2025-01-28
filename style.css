@@ -1,19 +1,17 @@
 body{
-    width: 900px;
-    margin: 0 auto;
+    width: auto;
+    padding: 2px;
     background-color: rgb(192, 192, 192)
 
 }
 .container{
-
-    padding: 12px;
     margin: 0 auto;
     background-color: white;
 
 }
 header{
     background-color: rgb(112, 128, 144);
-    margin: 0 auto;
+    height: 70px;
     text-align: center;
     color: aliceblue;
     
@@ -21,6 +19,7 @@ header{
 
 footer{
     background-color: black;
+    height: 150px;
     color: aliceblue;
     text-align: center;
 }
