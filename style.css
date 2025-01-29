@@ -1,14 +1,25 @@
-.container{
+body{
     width: 900px;
     margin: auto 0;
-    padding: 12px;
 }
 
-nav{
-    display: inline-block;
-    background-color: red;
+#container{
+   align-items: center;
 }
-nav.a{
-    text-decoration: none;
+
+.nav{
+    background-color: red; 
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav li a{
     color: white;
+    text-decoration-line: none;
 }
