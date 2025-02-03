@@ -1,25 +1,44 @@
 body{
-    width: 900px;
+    width: 1300px;
+    height: 2400px;
     margin: auto 0;
 }
 
-#container{
-   align-items: center;
+.banner{
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav{
+    height: 60px;
     background-color: red; 
     list-style-type: none;
-
     margin: 0;
     padding: 0;
 }
 
+
 .nav li{
     display: inline-block;
+    margin: auto;
 }
 
 .nav li a{
     color: white;
     text-decoration-line: none;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner{
+    height: 1 230px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 120px;
 }
