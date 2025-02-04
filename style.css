@@ -40,8 +40,12 @@ body{
 footer{
     background-color: #3D3D3D;
     color: white;
-    text-align: center;
     height: 120px;
+}
+.footer{
+    list-style-type:none;
+    display: grid;
+    grid-template-columns: auto  ;
 }
 .banner img{
     width: 100%;
