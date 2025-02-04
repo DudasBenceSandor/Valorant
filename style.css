@@ -12,7 +12,7 @@ body{
 
 .nav{
     height: 60px;
-    background-color: red; 
+    background-color: #FD4556; 
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,21 +38,28 @@ body{
 }
 
 footer{
-    background-color: black;
+    background-color: #3D3D3D;
     color: white;
     text-align: center;
     height: 120px;
 }
 .banner img{
     width: 100%;
-
+}
+section{
+    background-color: #53212B;
 }
 section ul{
     list-style-type: none;
 }
+._card{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    padding: 10px;
+}
+section ul li h4{
+    color: white;
+}
 .kép{
     width: 250px;}
-
-._card h4{
-    text-align:justify;
-}
