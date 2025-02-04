@@ -1,8 +1,6 @@
-body{
-    width: auto;
-    height: 2400px;
+#container{
+    margin: 0 auto;
 }
-
 .banner{
     width: auto;
     display: block;
