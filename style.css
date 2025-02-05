@@ -1,19 +1,23 @@
-#container{
-    margin: 0 auto;
+html{
+    height: 100%;
 }
-.banner{
-    width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+body{
+    min-height: 100%;
+}
+#container{
+    margin: 0 ;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
 }
 
 .nav{
     height: 60px;
+    width: 100%;
     background-color: #FD4556; 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    position: fixed top;
 }
 
 
@@ -31,10 +35,6 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.banner{
-    height: 1 230px;
-}
-
 footer{
     background-color: #3D3D3D;
     color: white;
@@ -45,9 +45,7 @@ footer{
     display: grid;
     grid-template-columns: auto  ;
 }
-.banner img{
-    width: 100%;
-}
+
 section{
     background-color: #53212B;
 }
