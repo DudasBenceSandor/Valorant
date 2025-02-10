@@ -49,12 +49,15 @@ footer{
 section{
     background-color: #53212B;
 }
-section ul{
+section th{
     list-style-type: none;
 }
 footer table{
     width: 100%;
     border-collapse: collapse;
+}
+footer th,footer td{
+    text-align: center;
 }
 section table ul li h4{
     color: white;
