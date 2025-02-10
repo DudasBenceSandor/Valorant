@@ -52,11 +52,9 @@ section{
 section ul{
     list-style-type: none;
 }
-table{
-    display: grid;
-    grid-template-columns: auto auto ;
-    gap: 10px;
-    padding: 10px;
+footer table{
+    width: 100%;
+    border-collapse: collapse;
 }
 section table ul li h4{
     color: white;
