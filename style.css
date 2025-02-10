@@ -17,7 +17,7 @@ body{
     width: 100%;
     background-color: #FD4556; 
     list-style-type: none;
-    position: fixed top;
+    position: fixed ;
 }
 
 
@@ -52,13 +52,11 @@ section{
 section ul{
     list-style-type: none;
 }
-._card{
-    display: grid;
-    grid-template-columns: auto auto ;
-    gap: 10px;
-    padding: 10px;
+footer table{
+    width: 100%;
+    border-collapse: collapse;
 }
-section ul li h4{
+section table ul li h4{
     color: white;
 }
 .kép{
