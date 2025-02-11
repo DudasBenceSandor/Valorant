@@ -55,6 +55,9 @@ html, body {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
 }
+.nav li:nth-child(1){
+    font-size: xx-large;
+}
 
 /* Fő tartalom */
 main {
