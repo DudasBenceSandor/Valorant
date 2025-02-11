@@ -21,7 +21,30 @@
             </ul>
         </nav>
     </header>
-    <script src="script.js"></script>
+    <script src="script.js">
+      var modal = document.getElementById("myModal");
+      var img = document.getElementsByClassName("kép")
+      var span = document.getElementsByClassName("close")[0];
+
+      img.onclick = function() {
+  modal.style.display = "block";
+      }
+      span.onclick = function() {
+  modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    }
+      }
+    </script>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>skibidi toilet</p>
+      </div>
+    </div>
 
       <main>
         <aside class="banner">
