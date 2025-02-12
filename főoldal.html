@@ -8,7 +8,28 @@
 </head>
 <body>
     <div id="container">
-      
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="closeModal"> &times; </span>
+          <p>skibidi</p>
+        </div>
+      </div>
+      <script>
+
+        var modal = document.getElementById(myModal);
+        var img = document.getElementById(openModal);
+        var span = document.getElementsByClassName(closeModal)[0];
+      span.onclick = function() {
+        modal.style1.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style1.display = "none";
+          }
+      }
+
+      </script>
       <header>
         <nav id="navLinks">
             <ul class="nav">
@@ -28,7 +49,7 @@
 
         <section class="card-container">
           <div class="card">
-            <img class="kép" src="img/VAL_Kuronami-1.png" alt="Fegyverekről"> 
+            <img onclick = document.getElementById(openModal).style.display = "block" class="kép" id="fegyverekrolmodal" src="img/VAL_Kuronami-1.png" alt="Fegyverekről"> 
             <div class="container">
               <h4>Fegyverekről</h4>
             </div>
