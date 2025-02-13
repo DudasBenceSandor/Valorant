@@ -173,11 +173,11 @@ h4 {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #FD4556;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -195,4 +195,12 @@ h4 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modalcim {
+    text-align: center;
+}
+
+.modalul {
+    color: white;
 }

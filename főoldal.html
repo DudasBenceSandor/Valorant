@@ -8,28 +8,69 @@
 </head>
 <body>
     <div id="container">
-      <div id="myModal" class="modal">
+      <div id="myModal1" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>Ez egy kis felugró ablak!</p>
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Fegyverekről</h1>
+            <p class="modalp">
+              <ul class="modalul">
+                Pisztolyok:
+                  <li>Kisebb sebzés</li>
+                SMG-k:
+                  <li>Gyors tűzgyorsaság</li>
+                Puskák:
+                 <li>Kiegyensúlyozott fegyverek</li>
+                Mesterlövész puskák:
+                 <li>Nagy sebzés</li>
+                Shotgunok:
+                 <li>Nagy sebzés rövid távon</li>
+                Gépfegyverek:
+                 <li>Nagy sebzés és tűzgyorsaság</li>
+              </ul>
+            </p>
         </div>
     </div>
-    <script>
-      function openModal() {
-          document.getElementById("myModal").style.display = "block";
-      }
-   
-      function closeModal() {
-          document.getElementById("myModal").style.display = "none";
-      }
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('myModal2')">&times;</span>
+          <h1 class="modalcim">Karakterekről</h1>
+          <p class="modalp">Karakterek</p>
+      </div>
+    </div>
+    <div id="container">
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="modalcim">Pályákról</h1>
+            <p class="modalp">Pályák</p>
+        </div>
+    </div>
+    <div id="container">
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="modalcim">Esportról</h1>
+            <p class="modalp">Esport</p>
+        </div>
+    </div>
+  <script>
+    function openModal(id) {
+        document.getElementById(id).style.display = "block";
+    }
 
-      window.onclick = function(event) {
-        let modal = document.getElementById("myModal");
-        if (event.target == modal) {
-            modal.style.display = "none";
-          }
-      }
-    </script>
+    function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        let modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+</script>
       <header>
         <nav id="navLinks">
             <ul class="nav">
@@ -49,30 +90,28 @@
 
         <section class="card-container">
           <div class="card">
-            <img onclick="openModal()" class="kép" src="img/VAL_Kuronami-1.png" alt="Fegyverekről"> 
+            <img onclick="openModal('myModal1')" class="kép" src="img/VAL_Kuronami-1.png" alt="Fegyverekről"> 
             <div class="container">
               <h4>Fegyverekről</h4>
             </div>
           </div>
 
           <div class="card">
-            <a href="karakterek.html">
-              <img class="kép" src="img/Agentek/valorant-patch-8.0-1024x513.jpg" alt="Karakterekről">
-            </a>
+            <img onclick="openModal('myModal2')" class="kép" src="img/Agentek/valorant-patch-8.0-1024x513.jpg" alt="Karakterekről">
             <div class="cím">
               <h4>Karakterekről</h4>
             </div>
           </div>
 
           <div class="card">
-            <img class="kép" src="img/Mapok/compmaps.jpg" alt="Pályákról">
+            <img onclick="openModal('myModal3')" class="kép" src="img/Mapok/compmaps.jpg" alt="Pályákról">
             <div class="container">
               <h4>Pályákról</h4>
             </div>
           </div>
 
           <div class="card">
-            <img class="kép" src="img/Esport/valorant-esports.jpg" alt="Esportról">
+            <img onclick="openModal('myModal4')" class="kép" src="img/Esport/valorant-esports.jpg" alt="Esportról">
             <div class="container">
               <h4>Esportról</h4>
             </div>
