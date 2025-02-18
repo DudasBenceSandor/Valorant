@@ -66,13 +66,13 @@ main {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    height: 500px;
 }
 
 /* Section */
 
 section{
     background-color: #53212B;
-    height: fit-content;
 }
 
 .card {
@@ -80,6 +80,7 @@ section{
     border-radius: 10px;
     overflow: hidden;
     width: 20%;
+    height: 40%;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -87,6 +88,7 @@ section{
     column-count: 2;
     justify-content: space-between;
     padding-bottom: 10px;
+    margin-top: 120px;
 }
 
 .card:hover {
