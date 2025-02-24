@@ -230,3 +230,12 @@ h4 {
 .modal h4{
     font-size: x-large;
 }
+#myModal1{
+
+    background: black;
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+
+}
