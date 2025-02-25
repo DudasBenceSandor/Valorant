@@ -9,7 +9,66 @@
 </head>
 <body>
     <div id="container">
-      
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Breach</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">Fade</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="modalcim">Gekko</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="modalcim">KAY/O</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+            <h1 class="modalcim">Skye</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal6')">&times;</span>
+            <h1 class="modalcim">Sova</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
       <header>
         <ul class="nav">
           <li><a href="/főoldal.html">Valorant</a></li>
@@ -27,42 +86,42 @@
         <section class="card-container">
 
               <div class="card">
-                <img src="/img/Agentek/initiators/breach.png" alt="Breach" style="background-color: black;">
+                <img onclick="openModal('myModal1')" src="/img/Agentek/initiators/breach.png" alt="Breach" style="background-color: black;">
                 <div>
                   <h4>Breach</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="/img/Agentek/initiators/fade.png" alt="Fade" style="background-color: black;">
+                <img onclick="openModal('myModal2')" src="/img/Agentek/initiators/fade.png" alt="Fade" style="background-color: black;">
                 <div>
                   <h4>Fade</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="/img/Agentek/initiators/gekko.png" alt="Gekko" style="background-color: black;">
+                <img onclick="openModal('myModal3')" src="/img/Agentek/initiators/gekko.png" alt="Gekko" style="background-color: black;">
                 <div>
                   <h4>Gekko</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="/img/Agentek/initiators/kayo.png" alt="KAY/O" style="background-color: black;">
+                <img onclick="openModal('myModal4')" src="/img/Agentek/initiators/kayo.png" alt="KAY/O" style="background-color: black;">
                 <div>
                   <h4>KAY/O</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="/img/Agentek/initiators/skye.png" alt="Skye" style="background-color: black;">
+                <img onclick="openModal('myModal5')" src="/img/Agentek/initiators/skye.png" alt="Skye" style="background-color: black;">
                 <div>
                   <h4>Skye</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="/img/Agentek/initiators/sova.png" alt="Sova" style="background-color: black;">
+                <img onclick="openModal('myModal6')" src="/img/Agentek/initiators/sova.png" alt="Sova" style="background-color: black;">
                 <div>
                   <h4>Sova</h4>
                 </div>
