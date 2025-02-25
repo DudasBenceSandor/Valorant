@@ -9,7 +9,52 @@
 </head>
 <body>
     <div id="container">
-      
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Bulldog</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">Guardian</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="modalcim">Phantom</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="modalcim">Vandal</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
       <header>
         <ul class="nav">
           <li><a href="/főoldal.html">Valorant</a></li>
@@ -27,47 +72,30 @@
             <section class="card-container">
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/rifles/Bulldog.png" alt="Bulldog">
-                </a>
-                  <div class="container">
-                    <h4>Bulldog</h4>
+                  <img onclick="openModal('myModal1')" class="kép" src="/img/Fegyverek/rifles/Bulldog.png" alt="Bulldog">
+                <div class="container">
+                  <h4>Bulldog</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">  
-                  <img class="kép" src="/img/Fegyverek/rifles/guardian.png" alt="guardian">
-                </a>
-                  <div class="container">
-                    <h4>Guardian</h4>
+                  <img onclick="openModal('myModal2')" class="kép" src="/img/Fegyverek/rifles/guardian.png" alt="guardian">
+                <div class="container">
+                  <h4>Guardian</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/rifles/phantom.png" alt="Phantom">
-                </a>
-                  <div class="container">
-                    <h4>Phantom</h4>
+                  <img onclick="openModal('myModal3')" class="kép" src="/img/Fegyverek/rifles/phantom.png" alt="Phantom">
+                <div class="container">
+                  <h4>Phantom</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/rifles/vandal.png" alt="vandal">
-                </a>
-                  <div class="container">
-                    <h4>Vandal</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="/fegyverek machine-guns.html">
-                  <img class="kép" src="/img/Fegyverek/machineguns/ares.png" alt="Ares">
-                </a>
-                  <div class="container">
-                    <h4>Machine-Guns</h4>
+                  <img onclick="openModal('myModal4')" class="kép" src="/img/Fegyverek/rifles/vandal.png" alt="vandal">
+                <div class="container">
+                  <h4>Vandal</h4>
                 </div>
               </div>
             </section>

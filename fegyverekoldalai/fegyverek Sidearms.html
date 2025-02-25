@@ -4,12 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Fegyverek</title>
+    <title>Sidearms fegyverek</title>
 
 </head>
 <body>
     <div id="container">
-      
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Classic</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">Frenzy</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="modalcim">Ghost</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="modalcim">Sheriff</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+            <h1 class="modalcim">Shorty</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+      </script>
       <header>
         <ul class="nav">
           <li><a href="/főoldal.html">Valorant</a></li>
@@ -27,45 +79,35 @@
             <section class="card-container">
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/sidearms/classic.png" alt="Classic">
-                </a>
-                  <div class="container">
-                    <h4>Classic</h4>
+                  <img onclick="openModal('myModal1')" class="kép" src="/img/Fegyverek/sidearms/classic.png" alt="Classic">
+                <div class="container">
+                  <h4>Classic</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">  
-                  <img class="kép" src="/img/Fegyverek/sidearms/frreeze.png" alt="Freeze">
-                </a>
+                  <img onclick="openModal('myModal2')" class="kép" src="/img/Fegyverek/sidearms/frreeze.png" alt="Frenzy">
                   <div class="container">
-                    <h4>Freeze</h4>
+                    <h4>Frenzy</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/sidearms/ghost.png" alt="ghost">
-                </a>
+                  <img onclick="openModal('myModal3')" class="kép" src="/img/Fegyverek/sidearms/ghost.png" alt="ghost">
                   <div class="container">
                     <h4>Ghost</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/sidearms/sheriff.png" alt="Sheriff">
-                </a>
+                  <img onclick="openModal('myModal4')" class="kép" src="/img/Fegyverek/sidearms/sheriff.png" alt="Sheriff">
                   <div class="container">
                     <h4>Sheriff</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/sidearms/shorty.png" alt="Shorty">
-                </a>
+                  <img onclick="openModal('myModal5')" class="kép" src="/img/Fegyverek/sidearms/shorty.png" alt="Shorty">
                   <div class="container">
                     <h4>Shorty</h4>
                 </div>

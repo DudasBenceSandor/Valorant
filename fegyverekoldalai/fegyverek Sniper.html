@@ -9,7 +9,38 @@
 </head>
 <body>
     <div id="container">
-      
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Marshal</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">Operator</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+      </script>
       <header>
         <ul class="nav">
           <li><a href="/főoldal.html">Valorant</a></li>
@@ -27,29 +58,16 @@
             <section class="card-container">
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/snipers/marsal.png" alt="Marsal">
-                </a>
+                  <img onclick="openModal('myModal1')" class="kép" src="/img/Fegyverek/snipers/marsal.png" alt="Marshal">
                   <div class="container">
-                    <h4>Marsal</h4>
+                    <h4>Marshal</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">  
-                  <img class="kép" src="/img/Fegyverek/snipers/operator.png" alt="operator">
-                </a>
+                  <img onclick="openModal('myModal2')" class="kép" src="/img/Fegyverek/snipers/operator.png" alt="operator">
                   <div class="container">
                     <h4>Operator</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="/fegyverek machine-guns.html">
-                  <img class="kép" src="/img/Fegyverek/machineguns/ares.png" alt="Ares">
-                </a>
-                  <div class="container">
-                    <h4>Machine-Guns</h4>
                 </div>
               </div>
 

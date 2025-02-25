@@ -9,7 +9,38 @@
 </head>
 <body>
     <div id="container">
-      
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Spectre</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">Stinger</h1>
+            <p class="modalp"></p>
+        </div>
+      </div>
+      <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
       <header>
         <ul class="nav">
           <li><a href="/főoldal.html">Valorant</a></li>
@@ -27,20 +58,16 @@
             <section class="card-container">
 
               <div class="card">
-                <a href="">
-                  <img class="kép" src="/img/Fegyverek/submachineguns/Spectre.jpg" alt="Spectre">
-                </a>
-                  <div class="container">
-                    <h4>Spectre</h4>
+                  <img onclick="openModal('myModal1')" class="kép" src="/img/Fegyverek/submachineguns/Spectre.jpg" alt="Spectre">
+                <div class="container">
+                  <h4>Spectre</h4>
                 </div>
               </div>
 
               <div class="card">
-                <a href="">  
-                  <img class="kép" src="/img/Fegyverek/submachineguns/stinger.png" alt="Stinger">
-                </a>
-                  <div class="container">
-                    <h4>Stinger</h4>
+                  <img onclick="openModal('myModal2')" class="kép" src="/img/Fegyverek/submachineguns/stinger.png" alt="Stinger">
+                <div class="container">
+                  <h4>Stinger</h4>
                 </div>
               </div>
             </section>
