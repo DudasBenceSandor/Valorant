@@ -8,7 +8,103 @@
 </head>
 <body>
     <div id="container">
-      <!--Elfelejtettem hogy a pályák résznél nincs kész a javascript, majd suliban befejezem!-->
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Abyss</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">Ascent</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="modalcim">Bind</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="modalcim">Breeze</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+            <h1 class="modalcim">Fracture</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal6')">&times;</span>
+            <h1 class="modalcim">Haven</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal7')">&times;</span>
+            <h1 class="modalcim">Icebox</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal8')">&times;</span>
+            <h1 class="modalcim">Lotus</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal9')">&times;</span>
+            <h1 class="modalcim">Pearl</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal10')">&times;</span>
+            <h1 class="modalcim">Split</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      <div id="myModal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal11')">&times;</span>
+            <h1 class="modalcim">Sunset</h1>
+            <p class="modalp"></p>
+         </div>
+      </div>
+      
+      <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
+
       <header>
         <ul class="nav">
           <li><a href="főoldal.html">Valorant</a></li>
@@ -26,77 +122,77 @@
             <section class="card-container">
               
               <div class="card">
-                <img src="img/Mapok/abyss.png" alt="Abyss">
+                <img onclick="openModal('myModal1')" src="img/Mapok/abyss.png" alt="Abyss">
                 <div>
                   <h4>Abyss</h4>
                 </div>
               </div>
               
               <div class="card">
-                <img src="img/Mapok/ascent.png" alt="Ascent">
+                <img onclick="openModal('myModal2')" src="img/Mapok/ascent.png" alt="Ascent">
                 <div>
                   <h4>Ascent</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/bind.png" alt="Bind">
+                <img onclick="openModal('myModal3')" src="img/Mapok/bind.png" alt="Bind">
                 <div>
                   <h4>Bind</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/breeze.png" alt="Breeze">
+                <img onclick="openModal('myModal4')" src="img/Mapok/breeze.png" alt="Breeze">
                 <div>
                   <h4>Breeze</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/fracture.png" alt="Fracture">
+                <img onclick="openModal('myModal5')" src="img/Mapok/fracture.png" alt="Fracture">
                 <div>
                   <h4>Fracture</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/haven.png" alt="Haven">
+                <img onclick="openModal('myModal6')" src="img/Mapok/haven.png" alt="Haven">
                 <div>
                   <h4>Haven</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/icebox.png" alt="Icebox">
+                <img onclick="openModal('myModal7')" src="img/Mapok/icebox.png" alt="Icebox">
                 <div>
                   <h4>Icebox</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/lotus.jpg" alt="Lotus">
+                <img onclick="openModal('myModal8')" src="img/Mapok/lotus.jpg" alt="Lotus">
                 <div>
                   <h4>Lotus</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/pearl.png" alt="Pearl">
+                <img onclick="openModal('myModal9')" src="img/Mapok/pearl.png" alt="Pearl">
                 <div>
                   <h4>Pearl</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/split.png" alt="Split">
+                <img onclick="openModal('myModal10')" src="img/Mapok/split.png" alt="Split">
                 <div>
                   <h4>Split</h4>
                 </div>
               </div>
 
               <div class="card">
-                <img src="img/Mapok/sunset.jpg" alt="Sunset">
+                <img onclick="openModal('myModal11')" src="img/Mapok/sunset.jpg" alt="Sunset">
                 <div>
                   <h4>Sunset</h4>
                 </div>
