@@ -66,21 +66,21 @@ main {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    height: 500px;
 }
 
 /* Section */
 
 section{
     background-color: #53212B;
+    height: 500px;
 }
 
 .card {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    width: 22%;
-    height: 42%;
+    width: 16%;
+    height: 53%;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -88,8 +88,8 @@ section{
     column-count: 2;
     justify-content: space-between;
     padding-bottom: 10px;
-    margin-top: 120px;
-    transition: all 0.3ms;
+    margin-top: 100px;
+    transition: all 0.3s;
 }
 
 .card:hover {
@@ -104,11 +104,12 @@ section{
 
 .card img.kép {
     width: 100%;
-    height: 200px;
-    object-fit: fill;
+    height: 200%;
+    object-fit:fill;
 }
 
 .card h4 {
+    border-top: 1px solid white;
     color: black;
     font-size: 18px;
     margin-top: 10px;
