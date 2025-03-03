@@ -53,7 +53,11 @@
 .nav li:nth-child(1){
     font-size: xx-large;
 }
+.nav .icon{
 
+    font-size: x-large; 
+    color: white;
+}
 /* Fő tartalom */
 main {
     padding-top: 60px; /* Legalább a navbar magassága */
@@ -234,23 +238,8 @@ h4 {
 }
 
 @media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive a {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+
+
+
+
+}
