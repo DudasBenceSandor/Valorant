@@ -54,6 +54,10 @@
     font-size: xx-large;
 }
 
+.hamburger-menu span{
+    color: white;
+    size: 1px;
+}
 /* Fő tartalom */
 main {
     padding-top: 60px; /* Legalább a navbar magassága */
@@ -233,3 +237,8 @@ h4 {
 .modal h4{
     font-size: x-large;
 }
+
+@media (min-width: 768px) {
+    
+}
+/*https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript//
