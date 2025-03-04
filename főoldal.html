@@ -103,19 +103,14 @@
             }
         });
       }
-      function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
 </script>
       <header>
+        
         <nav id="navLinks">
           <div class="nav-menu">
             <ul class="nav">
+              <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
                 <li><a href="főoldal.html">Valorant</a></li>
                 <li><a href="főoldal.html">Főoldal</a></li>
                 <li><a href="fegyverek.html">Fegyverek</a></li>
@@ -123,9 +118,6 @@
                 <li><a href="karakterek.html">Karakterek</a></li>
                 <li><a href="esport.html">Esport</a></li>
           </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
             </ul>
 
         </nav>
