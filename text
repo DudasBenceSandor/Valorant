@@ -1,27 +1,128 @@
-Brimstone: Az Egyesült Államokból csatlakozott Brimstone orbitális arzenálja biztosítja, hogy csapata mindig előnyben legyen. Az a képessége, hogy precízen és biztonságosan tud szolgálni, páratlan földi parancsnoksá teszi.
-
-Abilities: 1. INCENDIARY: Tűz gránát kilövéséhez, amely felrobban, amikor a padlóra kerül, és egy elhúzódó tűzzónát hoz létre, amely károsítja a zónán belüli játékosokat.
+Agent:
+Controller:
+    Brimstone: Az Egyesült Államokból csatlakozott Brimstone orbitális arzenálja biztosítja, hogy csapata mindig előnyben legyen. Az a képessége, hogy precízen és biztonságosan tud szolgálni, páratlan földi parancsnoksá teszi.
+    Abilities: 1. INCENDIARY: Tűz gránát kilövéséhez, amely felrobban, amikor a padlóra kerül, és egy elhúzódó tűzzónát hoz létre, amely károsítja a zónán belüli játékosokat.
             2. SKY SMOKE: Füstfelhőket bocsát ki, amelyek blokkolják a látást a kiválasztott területen.
             3. STIM BEACON: Felgyorsítja a csapattársakat, hogy elöbb érjünk a helyekre.
             4. ORBITAL STRIKE: Egy elhúzódó orbitális csapásmérő lézer elindításához a kiválasztott helyen, amely idővel nagy sebzést okoz a kiválasztott területen elkapott játékosoknak.
 
-Viper: Az amerikai vegyész, Viper mérgező vegyi eszközök sorát veti be, hogy irányítsa a csatateret, és elfojtsa az ellenség látását. Ha a méreganyagok nem ölik meg a zsákmányt, az elmejátékai biztosan meg fogják tenni.
 
-Abilities: 1. POISON CLOUD: El dobja a kibocsátót, amely örökké megmarad a körben. HASZNÁLJA ÚJRA a mérgező gázfelhő létrehozásának képességét üzemanyag árán.
+    Viper: Az amerikai vegyész, Viper mérgező vegyi eszközök sorát veti be, hogy irányítsa a csatateret, és elfojtsa az ellenség látását. Ha a méreganyagok nem ölik meg a zsákmányt, az elmejátékai biztosan meg fogják tenni.
+    Abilities: 1. POISON CLOUD: El dobja a kibocsátót, amely örökké megmarad a körben. HASZNÁLJA ÚJRA a mérgező gázfelhő létrehozásának képességét üzemanyag árán.
             2. TOXIC SCREEN: Gázkibocsátók hosszú sorát telepítsék. HASZNÁLJA ÚJRA azt a képességet, hogy magas mérgező gázfalat hozzon létre üzemanyag árán. Ez a képesség többször is ÚJRA HASZNÁLHATÓ.
             3. SNAKE BITE: El indít egy tartályt, amely összetörik, amikor a padlót éri, és egy tartós vegyi zónát hoz létre, amely károsítja és lelassítja az ellenséget.
             4. VIPER S PIT: Be permetez egy vegyi felhőt a Viper körül minden irányba, és egy nagy felhőt hozzon létre, amely csökkenti a benne lévő játékosok látótávolságát és maximális egészségi állapotát.
 
-Omen: Egy emlék fantomja, az Ómen az árnyékban vadászik. Vakítja az ellenséget, átteleportál a pályán, majd hagyja, hogy a paranoia elhatalmasodjon, miközben ellensége tülekodik, hogy megtudja, hol csaphat le legközelebb.
 
-Abilities: 1. PARANOIA: Rövid időre csökkentve az összes játékos látótávolságát, amelyhez hozzáér. Ez a lövedék egyenesen áthaladhat a falakon.
+    Omen: Egy emlék fantomja, az Ómen az árnyékban vadászik. Vakítja az ellenséget, átteleportál a pályán, majd hagyja, hogy a paranoia elhatalmasodjon, miközben ellensége tülekodik, hogy megtudja, hol csaphat le legközelebb.
+    Abilities: 1. PARANOIA: Rövid időre csökkentve az összes játékos látótávolságát, amelyhez hozzáér. Ez a lövedék egyenesen áthaladhat a falakon.
             2. DARK COVER: Belép a szakaszos világba amely átlatja a oldalakat árnyékgömböt a megjelölt helyre dobja, és hosszantartó árnyékgömböt hoz létre, amely blokkolja a látást.
             3. SHROUDED STEP: Árnyékjárási képesség nézze meg annak hatótávolságát majd teleportáljon a megjelölt helyre.
             4. FROM THE SHADOWS: Elkezd teleportálni a kiválasztott helyre. Teleportálás közben az Omen Árnyékként jelenik meg, amelyet az ellenség elpusztíthat, hogy megszakítsa a teleportálását.
 
-Astra: A ghánai ügynök, Astra a kozmosz energiáit használja fel, hogy a csatatereket a szeszélye szerint formálja át. Asztrális alakjának teljes uralmával és a mély stratégiai előrelátás tehetségével mindig eonokkal megelőzi ellensége következő lépését.
 
-Abilities: 1. NOVA PULSE:  A Nova Pulse rövid ideig támad, majd lecsap, és megrázza az összes játékost a területén.
+    Astra: A ghánai ügynök, Astra a kozmosz energiáit használja fel, hogy a csatatereket a szeszélye szerint formálja át. Asztrális alakjának teljes uralmával és a mély stratégiai előrelátás tehetségével mindig eonokkal megelőzi ellensége következő lépését.
+    Abilities: 1. NOVA PULSE:  A Nova Pulse rövid ideig támad, majd lecsap, és megrázza az összes játékost a területén.
             2. NEBULA: A Csillagot, hogy eloszlassa, és késleltetés után visszaküldi a csillagot új helyre. A disszipáció rövid időre hamis ködöt képez a csillag helyén, mielőtt visszatérne.
             3. GRAVITY WELL: A területen lévő játékosok a központ felé húzódnak, mielőtt az felrobbanna, így az összes játékos még mindig sebezhetővé válik.
             4. ASTRAL FORM / COSMIC DIVIDE: A csillagok később újraaktiválhatók, átalakítva őket Nova Pulse, Nebula vagy Gravitációs kúttá. Amikor a Cosmic Divide fel van töltve, használja az ALT FIRE-t Asztrális formában a célzás megkezdéséhez, majd a FIRE-t a két hely kiválasztásához. Egy végtelen kozmikus szakadék köti össze a két kiválasztott pontot. A Cosmic Divide blokkolja a golyókat és erősen tompítja a hangot.
+
+
+    Clove: A skót bajkeverő Clove a harc hevében és a halál hidegében is huncutságot követ el az ellenségekkel. A fiatal halhatatlan még a síron túlról is sejteti ellenségeit, hogy csak egy pillanatra térnek vissza az élőkhöz.
+    Abilities: 1. Meddle: Töredék, amely rövid késleltetés után kitör, és átmenetileg lecsillapítja az összes befogott célpontot.
+            2. Ruse: olyan felhőket indít el, amelyek blokkolják a látást a kiválasztott területeken. A szegfűszeg a halál után is használhatja ezt a képességét.
+            3. Pick-Me-Up: Megsérülnek vagy meghaltak, sietve és átmeneti egészségre tesznek szert.
+            4. Not Dead Yet: Miután feltámadt, Clove-nak meghatározott időn belül ölést vagy sebzést kell szereznie, különben meghal.
+
+    Harbor: Az India partjairól származó Harbour megrohamozza a mezőt, ősi technológiát használva a víz felett. Habzó zuhatagokat és zúzó hullámokat szabadít fel, hogy megvédje szövetségeseit, vagy megdörzsölje azokat, akik szembeszállnak vele.
+    Abilities: 1. COVE: A talajba ütközéskor hozz létre egy elpusztítható vízpajzsot, amely blokkolja a golyókat.
+            2. HIGH TIDE: Küld előre vizet a talaj mentén. A vizet tudja irányítani . hajlítás közben, hogy korán megállítsa a vizet. Az eltalált játékosok LASSÍTVA
+            3. CASCADE: Véget vet az előre és a falakon keresztül gördülő hullámnak. HASZNÁLJA ÚJRA a hullám leállításához. Az eltalált játékosok LASSÍTVA.
+            4. RECKONING: Képesség benyomásával lesz egy kör amiben ha benne van az ellenfél játékosa le lesz lassítva És nem tud pontosan lőni.
+
+Duelist:
+    Jett:
+    Abilities:
+    Reyna:
+    Abilities:
+    Iso:
+    Abilities:
+    Neon:
+    Abilities:
+    Phoenix:
+    Abilities:
+    Raze:
+    Abilities:
+    Yoru:
+    Abilities:
+
+Initiator:
+    Breach:
+    Abilities:
+    Fade:
+    Abilities:
+    Gekko:
+    Abilities:
+    KAY/O:
+    Abilities:
+    Skye:
+    Abilities:
+    Sova:
+    Abilities:
+
+Sentinel:
+    Chamber:
+    Abilities:
+    Cypher:
+    Abilities:
+    Deadlock:
+    Abilities:
+    Killjoy:
+    Abilities:
+    Sage:
+    Abilities:
+    Vyse:
+    Abilities:
+    
+MAPOK:
+    Abyss:
+    Ascent:
+    Bind:
+    Breeze:
+    Fracture:
+    Haven:
+    Icebox:
+    Lotus:
+    Pearl:
+    Split:
+    Sunset:
+
+FEGYVEREK:
+    Machine-Guns:
+                    Ares:
+                    Odin:
+
+    Rifles:         
+                    Bulldog:
+                    Guardian:
+                    Phantom:
+                    Vandal:
+
+    Shotguns:
+                    Bucky:
+                    Judge:
+
+    Sniper:         
+                    Marshal:
+                    Operator:
+
+    Sidearms:
+                    Classic:
+                    Frenzy:
+                    Ghost:
+                    Sheriff:
+                    Shorty:
+
+    Submachine-Guns:
+                    Spectre:
+                    Stinger:
