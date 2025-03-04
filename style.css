@@ -316,7 +316,15 @@ body {
     margin-top: 10px;
 }
 
+iframe {
+    
+}
+
 /*Adatvédelemi információk oldal css*/
+
+#container_adatvedelem {
+    
+}
 
 
 @media screen and (max-width: 600px) {

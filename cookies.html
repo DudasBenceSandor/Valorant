@@ -30,37 +30,25 @@
         </div>
     </div>
     <script>
-        const consentBox = 
-    document.getElementById("consentBox");
-        const acceptBtn = 
-    document.querySelector(".consentButton");
-        const rejectBtn = 
-    document.querySelector(".rejectButton");
-
+        const consentBox = document.getElementById("consentBox");
+        const acceptBtn = document.querySelector(".consentButton");
+        const rejectBtn = document.querySelector(".rejectButton");
+ 
         acceptBtn.onclick = () => {
-    document.cookie = "CookieBy=ValorantOldalTeam; max-age="
-        + 60 * 60 * 24;
-    if (document.cookie) {
-        consentBox.classList.add("hide");
-    } 
-    else {
-        alert
-            ("Cookie can't be set! Please"+
-              " unblock this site from the cookie"+
-              " setting of your browser.");
-    }
-};
-
-rejectBtn.onclick = () => {
-    alert(
-        "Sütik elutasítva. Limitált lehetőségek.");
+    sessionStorage.setItem("CookieBy", "ValorantOldalTeam");
     consentBox.classList.add("hide");
-};
-
-let checkCookie = 
-    document.cookie.indexOf("CookieBy=ValorantOldalTeam");
-checkCookie !== -1 ? consentBox.classList.add("hide") :
+    };
+ 
+        rejectBtn.onclick = () => {
+    consentBox.classList.add("hide");
+    };
+ 
+        if (sessionStorage.getItem("CookieBy") === "ValorantOldalTeam") {
+    consentBox.classList.add("hide");
+    } 
+        else {
     consentBox.classList.remove("hide");
+    }
     </script>
 </body>
 </html>
