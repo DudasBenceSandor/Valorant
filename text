@@ -41,16 +41,39 @@ Controller:
             4. RECKONING: Képesség benyomásával lesz egy kör amiben ha benne van az ellenfél játékosa le lesz lassítva És nem tud pontosan lőni.
 
 Duelist:
-    Jett:
-    Abilities:
-    Reyna:
-    Abilities:
-    Iso:
-    Abilities:
-    Neon:
-    Abilities:
-    Phoenix:
-    Abilities:
+    Jett: A hazáját, Dél-Koreát képviselő Jett agilis és kitérő harci stílusa lehetővé teszi, hogy olyan kockázatokat vállaljon, amelyeket senki más nem tud. Minden összetűzés körül körbefut, és levágja az ellenségeket, mielőtt azok rájönnének, mi érte őket.
+    Abilities: 1. UPDRAFT: Elindítja fel tud repülni a magasba
+                2. TAILWIND: Jett abba az irányba hajt, amerre halad. Ha Jett mozdulatlanul áll, előrelendül. A hátszél töltése két ölésenként nullázódik
+                3. CLOUDBURST: egy felülettel való ütközéskor rövid látást blokkoló felhővé tágul. Tartja arra megy amerre nézel.
+                4. BLADE STORM: Ball klik lenyomással kidob egy kést ha az ellenfél játékosát megöli akkor ujratöltödik jobb klik lenyomasaval dobja az összes megmaradt kést, de nem töltődik újra.
+        
+
+    Reyna:Mexikó szívében kovácsolódott, Reyna uralja az egyharcot, és minden egyes ütésnél kitör. Képességeinek csak nyers képességei szabnak határt, ezért erősen függ a teljesítménytől.
+    Abilities: 1. DEVOUR: 3 másodperc. AZONNAL fogyassz el egy közeli lélekgömböt, rövid ideig gyorsan gyógyulva. Az ezzel a képességgel megszerzett, 100 feletti egészség 
+                2. DISMISS: Elfogyaszt egy közeli lélekgömböt, rövid időre megfoghatatlanná válik. Ha a EMPRESS aktív, akkor váljon láthatatlanná is.
+                3. LEER: Szemmel egy kis távolságra előre. A szem minden ellenséget közellátó lesz, aki ránéz.
+                4. EMPRESS: Növeli a tüzelési sebességet, fel szereli és újra töltés sebességet drámaian. Az ölés pontozása megújítja az időtartamot.
+
+
+    Iso:Bérelhető kínai szerelő, Iso áramlási állapotba esik, hogy szétzilálja az ellenzéket. A környezeti energiát golyóálló védelemmé alakítva, összpontosítva halad a következő halálos párbaj felé.
+    Abilities: 1. UNDERCUT: Ez a képesség legyengítí a játékosokat es többet tudunk bele sebezni 
+                2. DOUBLE TAP: A képesség elindításakor kapsz egy végő pajzsot és ha megöl egy ellenfél játékt akkor föle kerül egy másik és ha kilövi akkor lesz pajzsa megint
+                3. CONTINGENCY: Egy lila falat indít amin nem tudnak átlőni
+                4. KILL CONTRACT. Át visz egy arénaba ellenfél elkapása esetén
+
+
+    Neon:Neon filippínó ügynök döbbenetes sebességgel tör előre, és olyan gyorsan sugározza ki a bioelektromos sugárzást, ahogy azt a teste generálja. Előre fut, hogy elkapja az ellenséget, majd a villámnál gyorsabban lecsapja őket.
+    Abilities: 1. RELAY BOLT: Bénitás a játékosokat lelassítja legyengítí
+                2. HIGH GEAR: képesség használásával felgyorsul a Neon jobb klikkel csúszik amerre megy a Neon
+                3. FAST LANE: Egy falat húz fel közte van egy úz amivel betud jutni a sitetra
+                4. VERDRIVE:  Futva lesz egy lézer amit kilő a kezéből amivel tudja sebezni a játékosokat
+
+
+    Phoenix: Az Egyesült Királyságból származó Phoenix csillagereje átüti harci stílusát, villanással és lánggal fellobbanva a csatateret. Akár van tartaléka, akár nincs, a saját feltételei szerint rohan bele a harcba.
+    Abilities: 1. CURVEBALL: Egy tűzgolyót indít és a jobb vagy ball klikkel lehet irányítani és amivel bevakítja a játékosokat.
+                2. HOT HANDS: 
+                3. BLAZE: 
+                4. RUN IT BACK: 
     Raze:
     Abilities:
     Yoru:
