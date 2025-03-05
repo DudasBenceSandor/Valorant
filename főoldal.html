@@ -120,26 +120,33 @@
                 modal.style.display = "none";
             }
         });
+    window.addEventListener('resize', setMobileClass);
+    window.addEventListener('load', setMobileClass);
+
+    function setMobileClass() {
+        if (window.innerWidth <= 650) {
+            menu.classList.add('mobile');
+        } else {
+            menu.classList.remove('mobile');
+        }
+    };
       }
 </script>
 <script src="cookie.js"></script>
       <header>
         
-        <nav id="navLinks">
           <div class="nav-menu">
             <ul class="nav">
-              <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
                 <li><a href="főoldal.html">Valorant</a></li>
                 <li><a href="főoldal.html">Főoldal</a></li>
                 <li><a href="fegyverek.html">Fegyverek</a></li>
                 <li><a href="pályák.html">Pályák</a></li>
                 <li><a href="karakterek.html">Karakterek</a></li>
                 <li><a href="esport.html">Esport</a></li>
+              </ul>
+              <input type="image" class="hamburger" onclick={openMenu()} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png" />
           </div>
-            </ul>
 
-        </nav>
     </header>
       <main>
         <aside class="banner">
