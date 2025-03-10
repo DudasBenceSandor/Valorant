@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/cookies/cookie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fegyverek</title>
-
 </head>
 <body>
   <div id="consentBox">
@@ -27,82 +27,82 @@
     </div>
 </div>
     <div id="container">
-      <header>
-        <div class="nav-menu">
-          <ul class="nav">
-              <li><a href="főoldal.html">Valorant</a></li>
-              <li><a href="főoldal.html">Főoldal</a></li>
-              <li><a href="fegyverek.html">Fegyverek</a></li>
-              <li><a href="pályák.html">Pályák</a></li>
-              <li><a href="karakterek.html">Karakterek</a></li>
-              <li><a href="esport.html">Esport</a></li>
-            </ul>
-            <input type="image" class="hamburger" onclick={openMenu()} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png" />
-
-            <script src="/cookies/cookie.js"></script>
-          </div>
-      </header>
+        <header>
+          <nav>
+            <div class="nav-menu">
+              <ul class="nav">
+                  <div class="logo">
+                    <a href="főoldal.html">Valorant</a>
+                  </div>
+                  <li><a href="főoldal.html">Főoldal</a></li>
+                  <li><a href="fegyverek.html">Fegyverek</a></li>
+                  <li><a href="pályák.html">Pályák</a></li>
+                  <li><a href="karakterek.html">Karakterek</a></li>
+                  <li><a href="esport.html">Esport</a></li>
+                  <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a></li>
+              </ul>
+              <div class="menu-toggle" onclick="toggleMenu()">
+                  <div class="hamburger"></div>
+                  <div class="hamburger"></div>
+                  <div class="hamburger"></div>
+              </div>
+            </div>
+          </nav>
+        </header>
       <main>
-            <aside class="banner">
-              <img src="img/Fegyverek/banner.png" alt="">
-            </aside>
-            <section class="card-container">
-
-              <div class="card">
-                <a href="fegyverekoldalai/fegyverek machine-guns.html">
-                  <img class="kép" src="img/Fegyverek/kategoriak/Machine-Guns.png" alt="Machine-Guns">
-                </a>
-                  <div class="container">
-                    <h4>Machine-Guns</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="fegyverekoldalai/fegyverek rifles.html">  
-                  <img class="kép" src="img/Fegyverek/kategoriak/Rifles.png" alt="Rifles">
-                </a>
-                  <div class="container">
-                    <h4>Rifles</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="fegyverekoldalai/fegyverek Shotguns.html">
-                  <img class="kép" src="img/Fegyverek/kategoriak/Shotguns.png" alt="Shotguns">
-                </a>
-                  <div class="container">
-                  <h4>Shotguns</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="fegyverekoldalai/fegyverek Sniper.html">
-                  <img class="kép" src="img/Fegyverek/kategoriak/Sniper.png" alt="Sniper Rifles">
-                </a>
-                  <div class="container">
-                  <h4>Sniper</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="fegyverekoldalai/fegyverek Sidearms.html">
-                  <img class="kép" src="img/Fegyverek/kategoriak/Sidearms.png" alt="Sidearms">
-                </a>
-                <div class="container">
-                  <h4>Sidearms</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <a href="fegyverekoldalai/fegyverek submachine-guns.html">
-                  <img class="kép" src="img/Fegyverek/kategoriak/Submachine-Guns.png" alt="Submachine-guns">
-                </a>
-                <div class="container">
-                  <h4>Submachine-Guns</h4>
-                </div>
-              </div>
-
-            </section>
+        <aside class="banner">
+          <img src="img/Fegyverek/banner.png" alt="">
+        </aside>
+        <section class="card-container">
+          <div class="card">
+            <a href="fegyverekoldalai/fegyverek machine-guns.html">
+              <img class="kép" src="img/Fegyverek/kategoriak/Machine-Guns.png" alt="Machine-Guns">
+            </a>
+            <div class="container">
+              <h4>Machine-Guns</h4>
+            </div>
+          </div>
+          <div class="card">
+            <a href="fegyverekoldalai/fegyverek rifles.html">  
+              <img class="kép" src="img/Fegyverek/kategoriak/Rifles.png" alt="Rifles">
+            </a>
+            <div class="container">
+              <h4>Rifles</h4>
+            </div>
+          </div>
+          <div class="card">
+            <a href="fegyverekoldalai/fegyverek Shotguns.html">
+              <img class="kép" src="img/Fegyverek/kategoriak/Shotguns.png" alt="Shotguns">
+            </a>
+            <div class="container">
+              <h4>Shotguns</h4>
+            </div>
+          </div>
+          <div class="card">
+            <a href="fegyverekoldalai/fegyverek Sniper.html">
+              <img class="kép" src="img/Fegyverek/kategoriak/Sniper.png" alt="Sniper Rifles">
+            </a>
+            <div class="container">
+              <h4>Sniper</h4>
+            </div>
+          </div>
+          <div class="card">
+            <a href="fegyverekoldalai/fegyverek Sidearms.html">
+              <img class="kép" src="img/Fegyverek/kategoriak/Sidearms.png" alt="Sidearms">
+            </a>
+            <div class="container">
+              <h4>Sidearms</h4>
+            </div>
+          </div>
+          <div class="card">
+            <a href="fegyverekoldalai/fegyverek submachine-guns.html">
+              <img class="kép" src="img/Fegyverek/kategoriak/Submachine-Guns.png" alt="Submachine-guns">
+            </a>
+            <div class="container">
+              <h4>Submachine-Guns</h4>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="footer-container">
@@ -112,7 +112,6 @@
                 <p>Chen Haole</p>
                 <p>Kovács Damjan</p>
             </div>
-            
             <div class="footer-section">
               <h4>Elérhetőségeink:</h4>
               <p class="social-icons">
@@ -136,5 +135,17 @@
           </div>
         </div>
     </footer>
+    <script src="/cookies/cookie.js"></script>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.remove('active');
+        }
+    </script>
 </body>
 </html>

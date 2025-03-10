@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-pályák.css">
+    <link rel="stylesheet" href="pályák_style.css">
     <link rel="stylesheet" href="/cookies/cookie.css">
     <title>Pályák</title>
 </head>
@@ -11,9 +11,7 @@
   <div id="consentBox">
     <img src="img/Ikonok/cookie.png" alt="Cookie Icon">
     <div id="consentContent">
-        <header id="consentHeader">
-            Sütik
-        </header>
+        <header id="consentHeader">Sütik</header>
         <p>
             Sütiket használunk a felhasználók kényelme érdekében. <br>
             Az adatvédelmi információk itt találhatóak meg: 
@@ -121,107 +119,113 @@
                 }
             });
         }
-    </script>
-    <script src="/cookies/cookie.js"></script>
-      <header>
-        <div class="nav-menu">
-          <ul class="nav">
-              <li><a href="főoldal.html">Valorant</a></li>
-              <li><a href="főoldal.html">Főoldal</a></li>
-              <li><a href="fegyverek.html">Fegyverek</a></li>
-              <li><a href="pályák.html">Pályák</a></li>
-              <li><a href="karakterek.html">Karakterek</a></li>
-              <li><a href="esport.html">Esport</a></li>
-            </ul>
-            <input type="image" class="hamburger" onclick={openMenu()} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png" />
-        </div>
+      </script>
+      <script src="/cookies/cookie.js"></script>
+      <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.toggle('active');
+        }
 
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.remove('active');
+        }
+      </script>
+      <header>
+        <nav>
+          <div class="nav-menu">
+            <ul class="nav">
+                <div class="logo">
+                  <a href="főoldal.html">Valorant</a>
+                </div>
+                <li><a href="főoldal.html">Főoldal</a></li>
+                <li><a href="fegyverek.html">Fegyverek</a></li>
+                <li><a href="pályák.html">Pályák</a></li>
+                <li><a href="karakterek.html">Karakterek</a></li>
+                <li><a href="esport.html">Esport</a></li>
+                <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
-            <aside class="banner">
-              <img src="img/Mapok/banner.png" alt="">
-            </aside>
-            <section class="card-container">
-              
-              <div class="card">
-                <img onclick="openModal('myModal1')" src="img/Mapok/abyss.png" alt="Abyss">
-                <div>
-                  <h4>Abyss</h4>
-                </div>
-              </div>
-              
-              <div class="card">
-                <img onclick="openModal('myModal2')" src="img/Mapok/ascent.png" alt="Ascent">
-                <div>
-                  <h4>Ascent</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal3')" src="img/Mapok/bind.png" alt="Bind">
-                <div>
-                  <h4>Bind</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal4')" src="img/Mapok/breeze.png" alt="Breeze">
-                <div>
-                  <h4>Breeze</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal5')" src="img/Mapok/fracture.png" alt="Fracture">
-                <div>
-                  <h4>Fracture</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal6')" src="img/Mapok/haven.png" alt="Haven">
-                <div>
-                  <h4>Haven</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal7')" src="img/Mapok/icebox.png" alt="Icebox">
-                <div>
-                  <h4>Icebox</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal8')" src="img/Mapok/lotus.jpg" alt="Lotus">
-                <div>
-                  <h4>Lotus</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal9')" src="img/Mapok/pearl.png" alt="Pearl">
-                <div>
-                  <h4>Pearl</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal10')" src="img/Mapok/split.png" alt="Split">
-                <div>
-                  <h4>Split</h4>
-                </div>
-              </div>
-
-              <div class="card">
-                <img onclick="openModal('myModal11')" src="img/Mapok/sunset.jpg" alt="Sunset">
-                <div>
-                  <h4>Sunset</h4>
-                </div>
-              </div>
-
-            </section>
+        <aside class="banner">
+          <img src="img/Mapok/banner.png" alt="">
+        </aside>
+        <section class="card-container">
+          <div class="card">
+            <img onclick="openModal('myModal1')" src="img/Mapok/abyss.png" alt="Abyss">
+            <div>
+              <h4>Abyss</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal2')" src="img/Mapok/ascent.png" alt="Ascent">
+            <div>
+              <h4>Ascent</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal3')" src="img/Mapok/bind.png" alt="Bind">
+            <div>
+              <h4>Bind</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal4')" src="img/Mapok/breeze.png" alt="Breeze">
+            <div>
+              <h4>Breeze</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal5')" src="img/Mapok/fracture.png" alt="Fracture">
+            <div>
+              <h4>Fracture</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal6')" src="img/Mapok/haven.png" alt="Haven">
+            <div>
+              <h4>Haven</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal7')" src="img/Mapok/icebox.png" alt="Icebox">
+            <div>
+              <h4>Icebox</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal8')" src="img/Mapok/lotus.jpg" alt="Lotus">
+            <div>
+              <h4>Lotus</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal9')" src="img/Mapok/pearl.png" alt="Pearl">
+            <div>
+              <h4>Pearl</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal10')" src="img/Mapok/split.png" alt="Split">
+            <div>
+              <h4>Split</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img onclick="openModal('myModal11')" src="img/Mapok/sunset.jpg" alt="Sunset">
+            <div>
+              <h4>Sunset</h4>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="footer-container">
@@ -231,7 +235,7 @@
                 <p>Chen Haole</p>
                 <p>Kovács Damjan</p>
             </div>
-            
+
             <div class="footer-section">
               <h4>Elérhetőségeink:</h4>
               <p class="social-icons">

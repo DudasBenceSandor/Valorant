@@ -3,150 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-esport.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/cookies/cookie.css">
     <title>Esport</title>
-
 </head>
 <body>
-  <div id="consentBox">
-    <img src="img/Ikonok/cookie.png" alt="Cookie Icon">
-    <div id="consentContent">
-        <header id="consentHeader">
-            Sütik
-        </header>
-        <p>
-            Sütiket használunk a felhasználók kényelme érdekében. <br>
-            Az adatvédelmi információk itt találhatóak meg: 
-            <br><a href="cookies/adatvedelmi.html">Adatvédelem dokumentumok</a>
-        </p>
-        <div class="buttons">
-            <button class="consentButton">Sütik elfogadása</button>
-            <button class="rejectButton">Sütik elutasítása</button>
+    <div id="consentBox">
+        <img src="img/Ikonok/cookie.png" alt="Cookie Icon">
+        <div id="consentContent">
+            <header id="consentHeader">Sütik</header>
+            <p>
+                Sütiket használunk a felhasználók kényelme érdekében. <br>
+                Az adatvédelmi információk itt találhatóak meg: 
+                <br><a href="cookies/adatvedelmi.html">Adatvédelem dokumentumok</a>
+            </p>
+            <div class="buttons">
+                <button class="consentButton">Sütik elfogadása</button>
+                <button class="rejectButton">Sütik elutasítása</button>
+            </div>
         </div>
     </div>
-</div>
     <div id="container">
-      <div id="myModal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('myModal1')">&times;</span>
-            <h1 class="modalcim">Valorant Challengers</h1>
-            <p class="modalp"></p>
-        </div>
-      </div>
-      <div id="myModal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('myModal2')">&times;</span>
-            <h1 class="modalcim">Valorant Champions</h1>
-            <p class="modalp"></p>
-        </div>
-      </div>
-      <div id="myModal3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('myModal3')">&times;</span>
-            <h1 class="modalcim">Valorant Masters</h1>
-            <p class="modalp"></p>
-        </div>
-      </div>
-      <script>
-        function openModal(id) {
-            document.getElementById(id).style.display = "block";
-        }
+        <header>
+            <nav>
+                <div class="nav-menu">
+                  <ul class="nav">
+                      <div class="logo">
+                        <a href="főoldal.html">Valorant</a>
+                      </div>
+                      <li><a href="főoldal.html">Főoldal</a></li>
+                      <li><a href="fegyverek.html">Fegyverek</a></li>
+                      <li><a href="pályák.html">Pályák</a></li>
+                      <li><a href="karakterek.html">Karakterek</a></li>
+                      <li><a href="esport.html">Esport</a></li>
+                      <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a></li>
+                  </ul>
+                  <div class="menu-toggle" onclick="toggleMenu()">
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <aside class="banner">
+              <img src="img/Esport/banner.png" alt="">
+            </aside>
     
-        function closeModal(id) {
-            document.getElementById(id).style.display = "none";
-        }
-    
-        window.onclick = function(event) {
-            let modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            });
-        }
-      </script>
-      <script src="/cookies/cookie.js"></script>
-      <header>
-        <nav id="navLinks">
-          <div class="nav-menu">
-            <ul class="nav">
-                <li><a href="főoldal.html">Valorant</a></li>
-                <li><a href="főoldal.html">Főoldal</a></li>
-                <li><a href="fegyverek.html">Fegyverek</a></li>
-                <li><a href="pályák.html">Pályák</a></li>
-                <li><a href="karakterek.html">Karakterek</a></li>
-                <li><a href="esport.html">Esport</a></li>
-          </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-            </ul>
-
-        </nav>
-      </header>
-      <main>
-        <aside class="banner">
-          <img src="img/Esport/banner.png" alt="">
-        </aside>
-
-        <section class="card-container">
+            <section class="card-container">
+                  
+              <div class="card">
+                <img onclick="openModal('myModal1')" src="img/Esport/valorantchampionships/Challengers.png" alt="Challengers">
+                <div>
+                  <h4>Challengers</h4>
+                </div>
+              </div>
               
-          <div class="card">
-            <img onclick="openModal('myModal1')" src="img/Esport/valorantchampionships/Challengers.png" alt="Challengers">
-            <div>
-              <h4>Challengers</h4>
+              <div class="card">
+                <img onclick="openModal('myModal2')" src="img/Esport/valorantchampionships/Chanpionship.png" alt="Chanpionship">
+                <div>
+                  <h4>Chanpionship</h4>
+                </div>
+              </div>
+    
+              <div class="card">
+                <img onclick="openModal('myModal3')" src="img/Esport/valorantchampionships/Masters.png" alt="Masters">
+                <div>
+                  <h4>Masters</h4>
+                </div>
+              </div>
+    
+            </section>
+    
+          </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>A weboldal készítői:</h4>
+                    <p>Dudás Bence Sándor</p>
+                    <p>Chen Haole</p>
+                    <p>Kovács Damjan</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Elérhetőségeink:</h4>
+                    <p class="social-icons">
+                        <a href="mailto:valorantbemutato@gmail.com" target="_blank">
+                            <img src="img/Ikonok/gmail.png" alt="Gmail">
+                            valorantbemutato@gmail.com
+                        </a>
+                    </p>
+                    <p class="social-icons">
+                        <a href="https://facebook.com/valorant_bemutato" target="_blank">
+                            <img src="img/Ikonok/facebook.png" alt="Facebook"> 
+                            valorant_bemutato
+                        </a>
+                    </p>
+                    <p class="social-icons">
+                        <a href="https://instagram.com/Valorant_bemutato" target="_blank">
+                            <img src="img/Ikonok/instagram.png" alt="Instagram"> 
+                            Valorant_bemutato
+                        </a>
+                    </p>
+                </div>
             </div>
-          </div>
-          
-          <div class="card">
-            <img onclick="openModal('myModal2')" src="img/Esport/valorantchampionships/Chanpionship.png" alt="Chanpionship">
-            <div>
-              <h4>Chanpionship</h4>
-            </div>
-          </div>
+        </footer>
+    </div>
+    <script src="/cookies/cookie.js"></script>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.toggle('active');
+        }
 
-          <div class="card">
-            <img onclick="openModal('myModal3')" src="img/Esport/valorantchampionships/Masters.png" alt="Masters">
-            <div>
-              <h4>Masters</h4>
-            </div>
-          </div>
-
-        </section>
-
-      </main>
-      <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>A weboldal készítői:</h4>
-                <p>Dudás Bence Sándor</p>
-                <p>Chen Haole</p>
-                <p>Kovács Damjan</p>
-            </div>
-            
-            <div class="footer-section">
-              <h4>Elérhetőségeink:</h4>
-              <p class="social-icons">
-                  <a href="mailto:valorantbemutato@gmail.com" target="_blank">
-                    <img src="img/Ikonok/gmail.png" alt="Gmail">
-                    valorantbemutato@gmail.com
-                  </a>
-              </p>
-              <p class="social-icons">
-                  <a href="https://facebook.com/valorant_bemutato" target="_blank">
-                      <img src="img/Ikonok/facebook.png" alt="Facebook"> 
-                      valorant_bemutato
-                  </a>
-              </p>
-              <p class="social-icons">
-                  <a href="https://instagram.com/Valorant_bemutato" target="_blank">
-                      <img src="img/Ikonok/instagram.png" alt="Instagram"> 
-                      Valorant_bemutato
-                  </a>
-              </p>
-          </div>
-        </div>
-    </footer>
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.remove('active');
+        }
+    </script>
 </body>
 </html>
