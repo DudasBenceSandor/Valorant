@@ -122,30 +122,30 @@ MAPOK:
 
 FEGYVEREK:
     Machine-Guns:
-                    Ares:
-                    Odin:
+                    Ares: Ne tévessze össze az erejét az Odinnal, hasonló fegyver ugyan, de ereje nem ér fel.
+                    Odin: Ezzel a fegyverrel a kezében a hordozónak dicsőséget, az ellenfélnek pedig pusztulást hoz. Egy tipikus nehéz gépfegyver.
 
     Rifles:         
-                    Bulldog:
-                    Guardian:
-                    Phantom:
-                    Vandal:
+                    Bulldog: Valami fajta boldogságot ad amikor ezzel a fegyverrel lősz, kezdőbarát gépfegyver amely elősegíti a célzást.
+                    Guardian: A türelmes lövő kezében ragyog, a Guardian a jól célzók egyik kedvence.
+                    Phantom: Egy kiegyensúlyozott fegyver, amely stabil, hosszú távú és rödvid távú lövésekhez készült.
+                    Vandal: Ez a pontos gépfegyver vadul támad kis sorozatokban. Hosszú távra kiemelkedő, de rövid távra is használható.
 
     Shotguns:
-                    Bucky:
-                    Judge:
+                    Bucky: Egy egyszerű sörétes puska, húzd meg magad egy sarokba és várj ellenfeleidre a biztos kill érdekében.
+                    Judge: Automatikus, gyors tüzelésű sörétes puska, amely folyamatos magas sebzést biztosít közelre.
 
     Sniper:         
-                    Marshal:
-                    Operator:
+                    Marshal: Tarts egy szöget, lélegezz, és meg fogják bánni, hogy kinéztek azon a sarkon.
+                    Operator: Helyezd magad kényelembe, és irányítani fogod a fontos területet. Mindenki fél kinézni ha tudják hogy ilyen fegyvered van.
 
     Sidearms:
-                    Classic:
-                    Frenzy:
-                    Ghost:
-                    Sheriff:
-                    Shorty:
+                    Classic: Könnyű és sokoldalú, mindenki számára alapfegyver, igazi klasszikus.
+                    Frenzy: Egy gyorslövésű fegyver, közelről tartsd az ujjad a ravaszon. Messziről... próbálj valami mást.
+                    Ghost: Elegáns, hangtalan és profi bármilyen távolságból.
+                    Sheriff: Egy modern hatlövetű pisztoly a fejre lövés mestereinek.
+                    Shorty: Lepd meg az ellenségedet közelről a maximális hatékonyság érdekében.
 
     Submachine-Guns:
-                    Spectre:
-                    Stinger:
+                    Spectre: A Stingerhez hasonló közelre lövő fegyver, ha kétséged van, a Spectre az első számú választásod.
+                    Stinger: Tudni fogják, hogy vége, amikor eléri őket a Stinger közeli lövő ereje.
