@@ -63,6 +63,7 @@
     color: white;
     size: 1px;
 }
+
 /* Fő tartalom */
 main {
     padding-top: 60px; /* Legalább a navbar magassága */
@@ -82,6 +83,7 @@ main {
 
 section{
     background-color: #53212B;
+    height: fit-content;
 }
 
 .card {

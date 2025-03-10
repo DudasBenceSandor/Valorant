@@ -24,20 +24,25 @@
 
 
 /* Navigációs menü */
-.nav {
-    height: 60px;
+.nav-menu {
     width: 100%;
+    height: 50px;
     background-color: #FD4556;
     list-style-type: none;
     position: fixed;
+    line-height: 50px;
+    vertical-align: middle;
     top: 0;
     left: 0;
     z-index: 1000;
+    -webkit-user-select: all;
+    user-select: none;
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 0;
 }
+
 
 .nav li {
     display: inline-block;
@@ -233,4 +238,106 @@ h4 {
 }
 .modal h4{
     font-size: x-large;
+}
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+body:has(.side-menu:checked) {
+  overflow: hidden;
+}
+
+
+
+.nav {
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+
+.hamburger {
+    margin: 0 13px 0 auto;
+    height: inherit;
+}
+
+@media screen and (min-width: 651px) {
+    .nav {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        text-align: center;
+    }
+}
+
+.mobile {
+    position: absolute;
+    right: 0px;
+    top: 50px;
 }
