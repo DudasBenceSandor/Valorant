@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pályák_style.css">
     <link rel="stylesheet" href="/cookies/cookie.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fegyverek</title>
@@ -26,28 +26,39 @@
         </div>
     </div>
 </div>
-    <div id="container">
-        <header>
-          <nav>
-            <div class="nav-menu">
-              <ul class="nav">
-                  <div class="logo">
-                    <a href="főoldal.html">Valorant</a>
-                  </div>
-                  <li><a href="főoldal.html">Főoldal</a></li>
-                  <li><a href="fegyverek.html">Fegyverek</a></li>
-                  <li><a href="pályák.html">Pályák</a></li>
-                  <li><a href="karakterek.html">Karakterek</a></li>
-                  <li><a href="esport.html">Esport</a></li>
-                  <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a></li>
-              </ul>
-              <div class="menu-toggle" onclick="toggleMenu()">
-                  <div class="hamburger"></div>
-                  <div class="hamburger"></div>
-                  <div class="hamburger"></div>
+<script>
+  function toggleMenu() {
+      const navMenu = document.querySelector('.nav');
+      navMenu.classList.toggle('active');
+  }
+
+  function closeMenu() {
+      const navMenu = document.querySelector('.nav');
+      navMenu.classList.remove('active');
+  }
+</script>
+  <div id="container">
+    <header>
+      <nav>
+        <div class="nav-menu">
+          <ul class="nav">
+              <div class="logo">
+                <a href="főoldal.html">Valorant</a>
               </div>
-            </div>
-          </nav>
+              <li><a href="főoldal.html">Főoldal</a></li>
+              <li><a href="fegyverek.html">Fegyverek</a></li>
+              <li><a href="pályák.html">Pályák</a></li>
+              <li><a href="karakterek.html">Karakterek</a></li>
+              <li><a href="esport.html">Esport</a></li>
+              <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
+          </ul>
+          <div class="menu-toggle" onclick="toggleMenu()">
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+          </div>
+        </div>
+      </nav>
         </header>
       <main>
         <aside class="banner">
@@ -136,16 +147,5 @@
         </div>
     </footer>
     <script src="/cookies/cookie.js"></script>
-    <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.classList.toggle('active');
-        }
-
-        function closeMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.remove('active');
-        }
-    </script>
 </body>
 </html>

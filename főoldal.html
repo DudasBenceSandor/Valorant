@@ -131,33 +131,39 @@
             }
         </script>
         <script src="/cookies/cookie.js"></script>
-        <script>
-            function toggleMenu() {
-                const navMenu = document.querySelector('.nav-menu');
-                navMenu.classList.toggle('active');
-            }
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.toggle('active');
+        }
+    
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.remove('active');
+        }
         </script>
-        <header>
+        <div id="container">
+            <header>
             <nav>
                 <div class="nav-menu">
-                  <ul class="nav">
-                      <div class="logo">
+                <ul class="nav">
+                    <div class="logo">
                         <a href="főoldal.html">Valorant</a>
-                      </div>
-                      <li><a href="főoldal.html">Főoldal</a></li>
-                      <li><a href="fegyverek.html">Fegyverek</a></li>
-                      <li><a href="pályák.html">Pályák</a></li>
-                      <li><a href="karakterek.html">Karakterek</a></li>
-                      <li><a href="esport.html">Esport</a></li>
-                      <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a></li>
-                  </ul>
-                  <div class="menu-toggle" onclick="toggleMenu()">
-                      <div class="hamburger"></div>
-                      <div class="hamburger"></div>
-                      <div class="hamburger"></div>
-                  </div>
+                    </div>
+                    <li><a href="főoldal.html">Főoldal</a></li>
+                    <li><a href="fegyverek.html">Fegyverek</a></li>
+                    <li><a href="pályák.html">Pályák</a></li>
+                    <li><a href="karakterek.html">Karakterek</a></li>
+                    <li><a href="esport.html">Esport</a></li>
+                    <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
                 </div>
-              </nav>
+                </div>
+            </nav>
         </header>
         <main>
             <aside class="banner">

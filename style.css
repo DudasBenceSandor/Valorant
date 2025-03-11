@@ -13,7 +13,6 @@
 .banner {
     width: 100%;
     height: 400px; /* vagy amit szeretnél */
-    overflow: hidden;
 }
 
 .banner img {
@@ -80,12 +79,6 @@
     margin: 5px 0;
 }
 
-.closebtn {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
 
 /* Fő tartalom */
 main {
@@ -269,6 +262,12 @@ h4 {
 @media (max-width: 1024px) {
     .card {
         width: calc(25% - 10px); /* Átméretezés tablet nézetre */
+        transition: all 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #FD4556;
     }
 }
 
@@ -317,15 +316,17 @@ h4 {
     .menu-toggle {
         display: flex; /* Mobil nézetben látható ikon */
     }
-
-    .closebtn {
-        display: block;
-    }
 }
 
 @media (max-width: 480px) {
-    .card {
-        width: calc(50% - 10px); /* Átméretezés kisebb mobil nézetre */
+        .card {
+        width: calc(50% - 10px); /* Átméretezés tablet nézetre */
+        transition: all 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #FD4556;
     }
 
     .banner {

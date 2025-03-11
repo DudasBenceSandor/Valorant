@@ -26,6 +26,17 @@
         </div>
     </div>
 </div>
+  <script>
+    function toggleMenu() {
+        const navMenu = document.querySelector('.nav');
+        navMenu.classList.toggle('active');
+    }
+
+    function closeMenu() {
+        const navMenu = document.querySelector('.nav');
+        navMenu.classList.remove('active');
+    }
+  </script>
     <div id="container">
       <header>
         <nav>
@@ -39,7 +50,7 @@
                 <li><a href="pályák.html">Pályák</a></li>
                 <li><a href="karakterek.html">Karakterek</a></li>
                 <li><a href="esport.html">Esport</a></li>
-                <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a></li>
+                <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
             </ul>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <div class="hamburger"></div>
@@ -120,16 +131,5 @@
         </div>
     </footer>
     <script src="/cookies/cookie.js"></script>
-    <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.toggle('active');
-        }
-
-        function closeMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.remove('active');
-        }
-    </script>
 </body>
 </html>
