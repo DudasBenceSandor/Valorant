@@ -106,8 +106,7 @@ Initiator:
                 Nightfall: Fade egy nagy területet fed le, amely csökkenti az ellenfelek látási képességét, miközben azok folyamatosan sebződnek.
 
 
-    Gekko:
-Gekko, az Angeleno vészterhes lényekből álló szűk csapatot vezet. A haverjai előretörtek, elszórták az ellenséget az útból, Gekko pedig üldözte őket, hogy újra csoportosuljanak, és újra induljanak.
+    Gekko:Gekko, az Angeleno vészterhes lényekből álló szűk csapatot vezet. A haverjai előretörtek, elszórták az ellenséget az útból, Gekko pedig üldözte őket, hogy újra csoportosuljanak, és újra induljanak.
     Abilities:Dizzy :Egy kis lény, amely előre repül és megvakítja az ellenségeket, akikre rálát.
                 Wingman: Egy kis lény, amely előre rohan és vagy elkábítja az első ellenséget, akit lát, vagy a Spike-ot lerakja/hatástalanítja, ha van nála.
                 Mosh Pit:               Egy gránát, amely a földre érkezve felrobban és területi sebzést okoz.
@@ -217,3 +216,5 @@ FEGYVEREK:
     Submachine-Guns:
                     Spectre: A Stingerhez hasonló közelre lövő fegyver, ha kétséged van, a Spectre az első számú választásod.
                     Stinger: Tudni fogják, hogy vége, amikor eléri őket a Stinger közeli lövő ereje.
+
+Esport:
