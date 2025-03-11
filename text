@@ -134,18 +134,46 @@ Gekko, az Angeleno vészterhes lényekből álló szűk csapatot vezet. A haverj
                 Hunter’s Fury: Három erős energianyalábot lő ki a falakon keresztül, amely sebzi és megjelöli az ellenségeket.
 
 Sentinel:
-    Chamber:
-    Abilities:
-    Cypher:
-    Abilities:
-    Deadlock:
-    Abilities:
-    Killjoy:
-    Abilities:
-    Sage:
-    Abilities:
-    Vyse:
-    Abilities:
+    Chamber: A jól öltözött és jól felfegyverzett francia fegyvertervező, Chamber halálos precizitással űzi ki az agresszorokat. Egyedi arzenálját arra használja fel, hogy megtartsa a vonalat, és messziről szedje le az ellenségeket, minden tervhez épített vészhelyzettel.
+    Abilities: Trademark: Csapda, amely lassító mezőt hoz létre, ha ellenfél aktiválja.
+                Headhunter: Erős pisztoly, ADS mód támogatással.
+                Rendezvous: Teleport két elhelyezett pont között.
+                Tour De Force: Erős, egyedi mesterlövészpuska, amely egy lövéssel öl és lassító mezőt hoz létre találat után.
+    
+    
+    Cypher: A marokkói információs bróker, a Cypher egy egyszemélyes megfigyelőhálózat, aki figyelemmel kíséri az ellenség minden lépését. Egyetlen titok sem biztonságos. Egyetlen manőver sem marad látható nélkül. Cypher mindig figyel.
+    Abilities: Trapwire: Láthatatlan drótot helyez el, amely felfedi és elkábítja az ellenfeleket, ha nem semmisítik meg.
+                Cyber Cage: Füstgránát, amely blokkolja a látást és lassítja az áthaladó ellenfeleket.
+                Spycam: Távolról irányítható kamera, amely ellenségeket jelölhet meg.
+                Neural Theft: Egy halott ellenfél testéből szerzett információval felfedi az élő ellenségek helyzetét.
+
+
+    Deadlock:A norvég Deadlock ügynök egy sor élvonalbeli nanovezetéket telepít, hogy megvédje a csatateret a leghalálosabb támadásoktól is. Senki sem kerüli el éber óráját, és nem éli túl hajthatatlan vadságát.
+    Abilities: GravNet: Gránát, amely kényszeríti az ellenfeleket, hogy guggoljanak és lassabban mozogjanak.
+                Sonic Sensor: Fali érzékelő, amely a közelben lévő hangos zajokra (pl. lövések, futás) aktiválódik és elkábítja az ellenfeleket.
+                Barrier Mesh: Négy oszlopból álló energiapajzs, amely blokkolja az áthaladást és golyóálló.
+                Annihilation: Nanoháló, amely egyetlen ellenséget elfog, majd végigvezet a hálón, és ha nem szabadítják ki időben, azonnal megöli.
+   
+   
+    Killjoy: Németország zsenije. Killjoy találmányi arzenáljával könnyedén bebiztosítja a csatateret. Ha a felszerelése által okozott sebzés nem állítja meg ellenségeit, akkor robotjai debuffja segít rövid időn belül megbirkózni velük.
+    Abilities: Nanoswarm: Rejtett gránát, amely aktiváláskor sebzést okozó nanobotokat szabadít fel.
+                Alarmbot: Mozgásérzékelős bot, amely robbanáskor ellenségeket sebez és sebezhetővé teszi őket.
+                Turret: Egy 180 fokos szögben ellenségekre tüzelő automata torony.
+                Lockdown: Egy nagy területet érintő eszköz, amely 13 másodperc után minden benne lévő ellenfelet elkábít.
+    
+    
+    Sage:Kína fellegvára, Sage biztonságot teremt magának és csapatának, bárhová is megy. Képes újraéleszteni az elesett barátokat és kivédeni az agresszív lökéseket, nyugodt középpontja a pokoli küzdelemnek.
+    Abilities: Barrier Orb: Egy vastag jéggátat hoz létre, amely blokkolja az áthaladást és megerősíthető.
+                Slow Orb: Fagyasztott mezőt hoz létre, amely lassítja és hangosabbá teszi az áthaladókat.
+                Healing Orb: Gyógyít egy csapattársat vagy önmagát idővel.
+                Resurrection: Egy halott csapattársat feltámaszt teljes életerővel.
+    
+    
+    Vyse:A metál ötletgazdája, Vyse folyékony fémet szabadít fel, hogy elszigetelje, csapdába ejtse és lefegyverezze ellenségeit. Ravaszsággal és manipulációval mindenkit, aki szembeszáll vele, magától a csatatértől félni kényszerít.
+    Abilities: Razorvine: Folyékony fémfészek, amely aktiváláskor láthatatlanul terjed szét, lassítva és sebezve az áthaladókat.
+                Arc Rose: Láthatatlanul elhelyezhető eszköz, amely újraaktiválva megvakítja a ránéző játékosokat újra felvehető és áthelyezhető.
+                Shear: Folyékony fém szálakat helyez el csapdaként ha egy ellenfél áthalad rajta, mögötte egy elpusztíthatatlan fal emelkedik ki, amely rövid ideig fennmarad.
+                Molten Core: Folyékony fémhullámot bocsát ki, amely az első eltalált ellenfelet csapdába ejti és sebezhetővé teszi, megkönnyítve a csapat számára a kiiktatását.
     
 MAPOK:
     Abyss:
