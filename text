@@ -148,17 +148,17 @@ Sentinel:
     Abilities:
     
 MAPOK:
-    Abyss:
-    Ascent:
-    Bind:
-    Breeze:
-    Fracture:
-    Haven:
-    Icebox:
-    Lotus:
-    Pearl:
-    Split:
-    Sunset:
+    Abyss: Az Abyss egy sötét, titokzatos helyszín, ahol a harcok a mélyben zajlanak. A térkép szűk folyosókkal és változatos magasságokkal rendelkezik, ahol a támadók és védők folyamatosan kihívásokkal szembesülnek. A stratégia és a térhasználat kulcsfontosságú, hogy elérd a győzelmet.
+    Ascent: Egy nyílt játszótér, ahol a kis háborúk kimenetele a megfelelő pozíciódon múlik. Ascent 2 helyszínt tartalmaz. Mindkét helyszín megerősíthető lecsukható kapukkal, ha azok lekerülnek, el kell pusztítani őket, vagy más módon juthatsz be a területekre.
+    Bind: Két helyszín. Nincs középső terület. Balra vagy jobbra mehetsz csak. Mindkét irány közvetlen utat kínál a támadók számára, és egy pár egyirányú teleportáló segít a bekerítésben.
+    Breeze: Nézd meg a történelmi romokat vagy a tengerparti barlangokat ezen a trópusi paradicsomon. De mindig álj készen a fedezékbe meneküléshez. Szükséged lesz rá a széles, nyílt terekben és a hosszú távú összecsapások során. Figyelj a hátad mögé is és nem lesz gond.
+    Fracture: Egy szigorúan titkos kutatóintézet, amit egy sikertelen kísérlet szaggatott szét. A védelmi lehetőségek végtelenek, a választás a tiéd: találkozz a támadókkal a saját területükön, vagy várd őket a fedezékek mögött.
+    Haven: Egy elfeledett kolostor alatt három helyszín irányításáért küzdhetsz. A plusz helyszínt a védők és a támadók is egyaránt kihasználhatják új taktikákra.
+    Icebox: A következő csatatered egy titkos ásatási helyszín, amelyet az északi sark elborított. A két bombatelepítő helyszínt hó és fém védi. Használd ki a kötélpályákat, és sosem fogják észrevenni, hogy jössz.
+    Lotus: Egy rejtélyes építmény, amely egy asztrális vezetéket rejt, ősi erővel sugárzik. Nagy kőkapuk új taktikai lehetőségeket kínálnak, és megnyitják az utat három titokzatos helyszínhez.
+    Pearl: A támadóknak nagy az előnyük ezen a két helyszínes térképen, amely egy víz alatti városban van. Harcolj a kompakt középső részen, vagy a hosszabb távú szárnyakon.
+    Split: Egy emelt központ által elválasztott két helyszínt tartalmazó pálya amely lehetővé teszi a gyors mozgást kötélfelhúzók segítségével. Minden helyszín egy tornyot tartalmaz, amely kulcsfontosságú a kontroll megszerzéséhez. Ne felejts el felfelé is figyelni, mielőtt minden a levegőbe repül.
+    Sunset: Egy katasztrófa következtében létrejött fenyegetés amelynek célja hogy elnyelje az egész környéket. Állj meg a kedvenc ételeskocsidnál, majd harcold magad végig a városon ezen a hagyományos három sávos pályán.
 
 FEGYVEREK:
     Machine-Guns:
