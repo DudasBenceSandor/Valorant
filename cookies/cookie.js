@@ -1,19 +1,31 @@
 const consentBox = document.getElementById("consentBox");
+const overlay = document.getElementById("overlay");
 const acceptBtn = document.querySelector(".consentButton");
 const rejectBtn = document.querySelector(".rejectButton");
  
         acceptBtn.onclick = () => {
     sessionStorage.setItem("CookieBy", "ValorantOldalTeam");
-    consentBox.classList.add("hide");
+    hidePopup();
     };
  
         rejectBtn.onclick = () => {
-    consentBox.classList.add("hide");
+    hidePopup();
     };
- 
+
+    function hidePopup() {
+        consentBox.classList.add("hide");
+        overlay.classList.add("hide");
+    }
+
+    function showPopup() {
+        consentBox.classList.remove("hide");
+        overlay.classList.remove("hide");
+    }
+
+    window.onload = function() {
         if (sessionStorage.getItem("CookieBy") === "ValorantOldalTeam") {
-    consentBox.classList.add("hide");
-    } 
-        else {
-    consentBox.classList.remove("hide");
+            hidePopup();
+        } else {
+            showPopup();
+        }
     }
