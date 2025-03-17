@@ -8,54 +8,73 @@
     <title>Esport</title>
 </head>
 <body>
-  <div id="myModal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('myModal1')">&times;</span>
-        <h1 class="modalcim">Challengers</h1>
-        <p class="modalp"></p>
+  <div id="consentBox">
+    <img src="img/Ikonok/cookie.png" alt="Cookie Icon">
+    <div id="consentContent">
+      <header id="consentHeader">Sütik</header>
+      <p>
+        Sütiket használunk a felhasználók kényelme érdekében. <br>
+        Az adatvédelmi információk itt találhatóak meg: 
+        <br><a href="cookies/adatvedelmi.html">Adatvédelem dokumentumok</a>
+      </p>
+      <div class="buttons">
+        <button class="consentButton">Sütik elfogadása</button>
+        <button class="rejectButton">Sütik elutasítása</button>
+      </div>
     </div>
   </div>
-  <div id="myModal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('myModal2')">&times;</span>
-        <h1 class="modalcim">Masters</h1>
-        <p class="modalp"></p>
-    </div>
-  </div>
-  <div id="myModal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('myModal3')">&times;</span>
-        <h1 class="modalcim">Champions</h1>
-        <p class="modalp"></p>
-    </div>
-  </div>
-    <div id="consentBox">
-        <img src="img/Ikonok/cookie.png" alt="Cookie Icon">
-        <div id="consentContent">
-            <header id="consentHeader">Sütik</header>
-            <p>
-                Sütiket használunk a felhasználók kényelme érdekében. <br>
-                Az adatvédelmi információk itt találhatóak meg: 
-                <br><a href="cookies/adatvedelmi.html">Adatvédelem dokumentumok</a>
-            </p>
-            <div class="buttons">
-                <button class="consentButton">Sütik elfogadása</button>
-                <button class="rejectButton">Sütik elutasítása</button>
-            </div>
-        </div>
-    </div>
     <script>
-        function toggleMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.toggle('active');
-        }
-    
-        function closeMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.remove('active');
-        }
-      </script>
+      function openModal(id) {
+                document.getElementById(id).style.display = "block";
+            }
+
+            function closeModal(id) {
+                document.getElementById(id).style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                let modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            };
+
+            window.addEventListener('resize', setMobileClass);
+            window.addEventListener('load', setMobileClass);
+
+            function setMobileClass() {
+                const menu = document.querySelector('.nav-menu');
+                if (window.innerWidth <= 650) {
+                    menu.classList.add('mobile');
+                } else {
+                    menu.classList.remove('mobile');
+                }
+            }
+          </script>
         <div id="container">
+            <div id="myModal1" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                  <h1 class="modalcim">Challengers</h1>
+                  <p class="modalp"></p>
+              </div>
+            </div>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                  <h1 class="modalcim">Champions</h1>
+                  <p class="modalp"></p>
+              </div>
+            </div>
+            <div id="myModal3" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                  <h1 class="modalcim">Masters</h1>
+                  <p class="modalp"></p>
+              </div>
+            </div>
           <header>
             <nav>
               <div class="nav-menu">
