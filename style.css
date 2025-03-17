@@ -10,14 +10,10 @@
 }
 
 /* Banner kép */
-.banner {
-    width: 100%;
-    height: 400px; /* vagy amit szeretnél */
-}
 
 .banner img {
     width: 100%;
-    height: 100%;
+    height: 60%;
     object-fit: cover;
     display: block;
 }
@@ -27,7 +23,7 @@
     width: 100%;
     background-color: #FD4556;
     list-style-type: none;
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -260,7 +256,30 @@ h4 {
 
 /* Reszponzív dizájn */
 @media (max-width: 1024px) {
-    .card {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        position: fixed;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .nav.active {
+        max-height: 500px; /* vagy amennyi szükséges */
+    }
+
+    .card-container {
+        padding: 10px;
+    }
+        .card {
         width: calc(25% - 10px); /* Átméretezés tablet nézetre */
         transition: all 0.3s;
     }
@@ -269,6 +288,36 @@ h4 {
         transform: scale(1.05);
         box-shadow: 0 0 20px #FD4556;
     }
+
+    .banner {
+        height: calc(33.33% - 10px);; /* Kisebb magasság mobil nézetben */
+    }
+
+    .banner img {
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Középre igazítás mobil nézetben */
+    }
+
+    .footer-section {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center; /* Középre igazítás mobil nézetben */
+    }
+
+    .social-icons {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -276,6 +325,7 @@ h4 {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
+        position: absolute;
     }
 
     .nav {
@@ -297,10 +347,15 @@ h4 {
 
     .card {
         width: calc(33.33% - 10px); /* Átméretezés mobil nézetre */
+        height: auto;
     }
 
     .banner {
-        height: 200px; /* Mobil nézethez igazítás */
+        height: calc(33.33% - 10px);; /* Mobil nézethez igazítás */
+    }
+    .banner img {
+        height: auto;
+
     }
 
     .footer-container {
@@ -312,6 +367,16 @@ h4 {
         width: 100%;
         text-align: center;
     }
+    .social-icons {
+        flex-direction: column;
+        align-items: center; /* Középre igazítás mobil nézetben */
+    }
+
+    .social-icons {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 
     .menu-toggle {
         display: flex; /* Mobil nézetben látható ikon */
@@ -319,6 +384,29 @@ h4 {
 }
 
 @media (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        position: absolute;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .nav.active {
+        max-height: 500px; /* vagy amennyi szükséges */
+    }
+
+    .card-container {
+        padding: 10px;
+    }
         .card {
         width: calc(50% - 10px); /* Átméretezés tablet nézetre */
         transition: all 0.3s;
@@ -330,6 +418,32 @@ h4 {
     }
 
     .banner {
-        height: 150px; /* Kisebb magasság mobil nézetben */
+        height: calc(33.33% - 10px);; /* Kisebb magasság mobil nézetben */
+    }
+
+    .banner img {
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Középre igazítás mobil nézetben */
+    }
+
+    .footer-section {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center; /* Középre igazítás mobil nézetben */
+    }
+
+    .social-icons {
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 }
