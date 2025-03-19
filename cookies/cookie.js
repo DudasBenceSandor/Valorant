@@ -15,7 +15,9 @@ const rejectBtn = document.querySelector(".rejectButton");
     function hidePopup() {
         consentBox.classList.add("hide");
         overlay.classList.add("hide");
-        overlay.style.display="none"
+        setTimeout(() => {
+            overlay.style.display="none"
+        }, 2000);
     }
 
     function showPopup() {
