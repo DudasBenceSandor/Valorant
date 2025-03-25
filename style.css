@@ -9,15 +9,6 @@
     margin: 0;
 }
 
-/* Banner kép */
-
-.banner img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    display: block;
-}
-
 /* Navigációs menü */
 .nav-menu {
     width: 100%;
@@ -75,11 +66,21 @@
     margin: 5px 0;
 }
 
+/* Banner kép */
 
-/* Fő tartalom */
-main {
-    padding-top: 60px; /* Legalább a navbar magassága */
+.banner {
+    width: 100%;
+    height: 20%;
+}
 
+
+.banner img {
+    height : 100%;
+    width: 100%;
+}
+
+.main{
+    display: flex;
 }
 
 /* Kártyák */
@@ -309,13 +310,17 @@ h4 {
 }
 
 @media (max-width: 480px) {
+    .main{
+        margin-top: auto;
+    }
     .card {
         width: calc(50% - 10px); /* Átméretezés kisebb mobil nézetre */
     }
 
     .banner {
-        height: 150px; /* Kisebb magasság mobil nézetben */
-        overflow-y: scroll;
+        height: auto; /* Kisebb magasság mobil nézetben */
+        position: absolute;
+
     }
 }
 /*    .nav-menu {
