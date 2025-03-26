@@ -9,25 +9,12 @@
     margin: 0;
 }
 
-/* Banner kép */
-.banner {
-    width: 100%;
-    height: 400px; /* vagy amit szeretnél */
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
 /* Navigációs menü */
 .nav-menu {
     width: 100%;
     background-color: #FD4556;
     list-style-type: none;
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -79,10 +66,21 @@
     margin: 5px 0;
 }
 
+/* Banner kép */
 
-/* Fő tartalom */
-main {
-    padding-top: 60px; /* Legalább a navbar magassága */
+.banner {
+    width: 100%;
+    height: 20%;
+}
+
+
+.banner img {
+    height : 100%;
+    width: 100%;
+}
+
+.main{
+    display: flex;
 }
 
 /* Kártyák */
@@ -110,7 +108,7 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    column-count: 2;
+    column-count: 1;
     justify-content: space-between;
     padding-bottom: 10px;
     transition: all 0.3s;
@@ -129,7 +127,7 @@ section {
 .card img.kép {
     width: 100%;
     height: 200px;
-    object-fit: fill;
+    object-fit:fill;
 }
 
 .card h4 {
@@ -262,16 +260,9 @@ h4 {
 @media (max-width: 1024px) {
     .card {
         width: calc(25% - 10px); /* Átméretezés tablet nézetre */
-        transition: all 0.3s;
-    }
-
-    .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px #FD4556;
     }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .nav-menu {
         flex-direction: column;
         align-items: flex-start;
@@ -319,17 +310,36 @@ h4 {
 }
 
 @media (max-width: 480px) {
-        .card {
-        width: calc(50% - 10px); /* Átméretezés tablet nézetre */
-        transition: all 0.3s;
+    .main{
+        margin-top: auto;
     }
-
-    .card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px #FD4556;
+    .card {
+        width: calc(50% - 10px); /* Átméretezés kisebb mobil nézetre */
     }
 
     .banner {
-        height: 150px; /* Kisebb magasság mobil nézetben */
+        height: auto; /* Kisebb magasság mobil nézetben */
+        position: absolute;
+
     }
 }
+/*    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        position: absolute;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .nav.active {
+        max-height: 500px;
+    }
+/*

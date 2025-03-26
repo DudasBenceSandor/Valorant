@@ -15,11 +15,15 @@ const rejectBtn = document.querySelector(".rejectButton");
     function hidePopup() {
         consentBox.classList.add("hide");
         overlay.classList.add("hide");
+        setTimeout(() => {
+            overlay.style.display="none"
+        }, 2000);
     }
 
     function showPopup() {
         consentBox.classList.remove("hide");
         overlay.classList.remove("hide");
+        overlay.style.display="block"
     }
 
     window.onload = function() {

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/cookies/cookie.css">
+    <title>Esport</title>
+</head>
+<body>
+  <div id="overlay">
+    <div id="consentBox">
+      <img src="img/Ikonok/cookie.png" alt="Cookie Icon">
+      <div id="consentContent">
+        <header id="consentHeader">Sütik</header>
+        <p>
+          Sütiket használunk a felhasználók kényelme érdekében. <br>
+          Az adatvédelmi információk itt találhatóak meg: 
+          <br><a href="cookies/adatvedelmi.html">Adatvédelem dokumentumok</a>
+        </p>
+        <div class="buttons">
+          <button class="consentButton">Sütik elfogadása</button>
+          <button class="rejectButton">Sütik elutasítása</button>
+        </div>
+      </div>
+      </div>
+  </div>
+    <script>
+      function openModal(id) {
+                document.getElementById(id).style.display = "block";
+            }
+
+            function closeModal(id) {
+                document.getElementById(id).style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                let modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            };
+
+            window.addEventListener('resize', setMobileClass);
+            window.addEventListener('load', setMobileClass);
+
+            function setMobileClass() {
+                const menu = document.querySelector('.nav-menu');
+                if (window.innerWidth <= 650) {
+                    menu.classList.add('mobile');
+                } else {
+                    menu.classList.remove('mobile');
+                }
+            }
+          </script>
+        <div id="container">
+            <div id="myModal1" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                  <h1 class="modalcim">Challengers</h1>
+                  <p class="modalp">
+                    <ul>
+                      <p>Challengers (Selejtezők és regionális ligák)</p>
+                      <p>A Challengers a legelső lépcsőfok, ahol a csapatok megmérkőznek, hogy kvalifikálják magukat a magasabb szintű versenyekre.</p>
+                      <p>Regionális lebonyolítás: Több különböző régióban rendezik meg (például EMEA, Észak-Amerika, LATAM).</p>
+                      <p>Formátum: Csoportkörök és rájátszás. A legjobb csapatok innen kvalifikálnak a Masters versenyekre.</p>
+                      <p>Cél: A legjobbak feljebb léphetnek a Masters-re és akár a VCT ligákba is bekerülhetnek.</p>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                  <h1 class="modalcim">Champions</h1>
+                  <p class="modalp">
+                    <ul>
+                      <p>Champions (Világbajnokság)</p>
+                      <p>A VALORANT Champions a legnagyobb éves verseny, amely egyenértékű egy világbajnoksággal.</p>
+                      <p>Az év legjobb csapatai vesznek részt (Masters és Challengers eredmények alapján).</p>
+                      <p>Célja: A világ legjobb VALORANT csapatának megtalálása.</p>
+                      <p>Helyszín: Minden évben más országban rendezik meg.</p>
+                      <p>Lebonyolítás: Csoportkör + kieséses szakasz + nagydöntő.</p>
+                      <p>A fődíj: Hatalmas pénzdíj és a világbajnoki cím.</p>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+            <div id="myModal3" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                  <h1 class="modalcim">Masters</h1>
+                  <p class="modalp">
+                    <ul>
+                      <p>Masters (Nemzetközi verseny)</p>
+                      <p>A Masters a középszintű, nemzetközi versenysorozat, ahol a Challengers győztesei és a Franchise ligák legjobbjai csapnak össze.</p>
+                      <p>Évente kétszer rendezik meg.</p>
+                      <p>Fontos tét: A Masters-ön szerzett eredmények hozzájárulnak a Champions kvalifikációhoz.</p>
+                      <p>Csapatok: A világ legjobb csapatai vesznek részt, akik az adott szezonban kiemelkedően teljesítettek.</p>
+                      <p>Díjazás: Magas pénznyeremény és VCT ranglistapontok.</p>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+            <div id="myModal4" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                  <h1 class="modalcim">Valorant Teams</h1>
+                  <p class="modalp">
+                    <ul>
+                      <p>Masters (Nemzetközi verseny)</p>
+                      <p>A Masters a középszintű, nemzetközi versenysorozat, ahol a Challengers győztesei és a Franchise ligák legjobbjai csapnak össze.</p>
+                      <p>Évente kétszer rendezik meg.</p>
+                      <p>Fontos tét: A Masters-ön szerzett eredmények hozzájárulnak a Champions kvalifikációhoz.</p>
+                      <p>Csapatok: A világ legjobb csapatai vesznek részt, akik az adott szezonban kiemelkedően teljesítettek.</p>
+                      <p>Díjazás: Magas pénznyeremény és VCT ranglistapontok.</p>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+          <header>
+            <nav>
+              <div class="nav-menu">
+                <ul class="nav">
+                    <div class="logo">
+                      <a href="root/index.html">Valorant</a>
+                    </div>
+                    <li><a href="/index.html">Főoldal</a></li>
+                    <li><a href="fegyverek.html">Fegyverek</a></li>
+                    <li><a href="pályák.html">Pályák</a></li>
+                    <li><a href="karakterek.html">Karakterek</a></li>
+                    <li><a href="esport.html">Esport</a></li>
+                    <li><a href="javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <main>
+            <aside class="banner">
+              <img src="img/Esport/banner.png" alt="">
+            </aside>
+    
+            <section class="card-container">
+                  
+              <div class="card">
+                <img onclick="openModal('myModal1')" src="img/Esport/valorantchampionships/Challengers.png" alt="Challengers">
+                <div>
+                  <h4>Challengers</h4>
+                </div>
+              </div>
+              
+              <div class="card">
+                <img onclick="openModal('myModal2')" src="img/Esport/valorantchampionships/Chanpionship.png" alt="Chanpionship">
+                <div>
+                  <h4>Champions</h4>
+                </div>
+              </div>
+    
+              <div class="card">
+                <img onclick="openModal('myModal3')" src="img/Esport/valorantchampionships/Masters.png" alt="Masters">
+                <div>
+                  <h4>Masters</h4>
+                </div>
+              </div>
+              <!--Bencee majd ezt át kéne raknod a 3 card alá, vagyis ahogy gondolod de szerintünk jobban nézne ki-->
+              <div class="card">
+                <a href="esport_teams.html">
+                  <img class="kép" src="img/Esport/Teams/image.png" alt="Masters">
+                </a>
+                <div class="container">
+                  <h4>Teams</h4>
+                </div>
+              </div>
+    
+            </section>
+    
+          </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>A weboldal készítői:</h4>
+                    <p>Dudás Bence Sándor</p>
+                    <p>Chen Haole</p>
+                    <p>Kovács Damjan</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Elérhetőségeink:</h4>
+                    <p class="social-icons">
+                        <a href="mailto:valorantbemutato@gmail.com" target="_blank">
+                            <img src="img/Ikonok/gmail.png" alt="Gmail">
+                            valorantbemutato@gmail.com
+                        </a>
+                    </p>
+                    <p class="social-icons">
+                        <a href="https://facebook.com/valorant_bemutato" target="_blank">
+                            <img src="img/Ikonok/facebook.png" alt="Facebook"> 
+                            valorant_bemutato
+                        </a>
+                    </p>
+                    <p class="social-icons">
+                        <a href="https://instagram.com/Valorant_bemutato" target="_blank">
+                            <img src="img/Ikonok/instagram.png" alt="Instagram"> 
+                            Valorant_bemutato
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/cookies/cookie.js"></script>
+</body>
+</html>
