@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Fegyverek</title>
 
 </head>
@@ -95,49 +95,68 @@
             });
         }
     </script>
-      <header>
-        <nav>
-          <div class="nav-menu">
-            <ul class="nav">
-                <li><a href="/root/index.html">Valorant</a></li>
-                <li><a href="/root/index.html">Főoldal</a></li>
-                <li><a href="/fegyverek.html">Fegyverek</a></li>
-                <li><a href="/pályák.html">Pályák</a></li>
-                <li><a href="/karakterek.html">Karakterek</a></li>
-                <li><a href="/esport.html">Esport</a></li>
-          </div>
-            </ul>
-        </nav>
-      </header>
+        <script>
+          function toggleMenu() {
+              const navMenu = document.querySelector('.nav');
+              navMenu.classList.toggle('active');
+          }
+      
+          function closeMenu() {
+              const navMenu = document.querySelector('.nav');
+              navMenu.classList.remove('active');
+          }
+          </script>
+            <header>
+              <nav>
+                  <div class="nav-menu">
+                  <ul class="nav">
+                      <div class="logo">
+                          <a href="../index.html">Valorant</a>
+                      </div>
+                      <li><a href="../index.html">Főoldal</a></li>
+                      <li><a href="../oldalak/fegyverek.html">Fegyverek</a></li>
+                      <li><a href="../oldalak/pályák.html">Pályák</a></li>
+                      <li><a href="../oldalak/karakterek.html">Karakterek</a></li>
+                      <li><a href="../oldalak/esport.html">Esport</a></li>
+                      <li><a href="../javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
+                  </ul>
+                  <div class="menu-toggle" onclick="toggleMenu()">
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                      <div class="hamburger"></div>
+                  </div>
+                  </div>
+              </nav>
+          </header>
       <main>
             <aside class="banner">
-              <img src="/img/Fegyverek/banner.png" alt="">
+              <img src="../img/Fegyverek/banner.png" alt="">
             </aside>
             <section class="card-container">
 
               <div class="card">
-                  <img onclick="openModal('myModal1')" class="kép" src="/img/Fegyverek/rifles/Bulldog.png" alt="Bulldog">
+                  <img onclick="openModal('myModal1')" class="kép" src="../img/Fegyverek/rifles/Bulldog.png" alt="Bulldog">
                 <div class="container">
                   <h4>Bulldog</h4>
                 </div>
               </div>
 
               <div class="card">
-                  <img onclick="openModal('myModal2')" class="kép" src="/img/Fegyverek/rifles/guardian.png" alt="guardian">
+                  <img onclick="openModal('myModal2')" class="kép" src="../img/Fegyverek/rifles/guardian.png" alt="guardian">
                 <div class="container">
                   <h4>Guardian</h4>
                 </div>
               </div>
 
               <div class="card">
-                  <img onclick="openModal('myModal3')" class="kép" src="/img/Fegyverek/rifles/phantom.png" alt="Phantom">
+                  <img onclick="openModal('myModal3')" class="kép" src="../img/Fegyverek/rifles/phantom.png" alt="Phantom">
                 <div class="container">
                   <h4>Phantom</h4>
                 </div>
               </div>
 
               <div class="card">
-                  <img onclick="openModal('myModal4')" class="kép" src="/img/Fegyverek/rifles/vandal.png" alt="vandal">
+                  <img onclick="openModal('myModal4')" class="kép" src="../img/Fegyverek/rifles/vandal.png" alt="vandal">
                 <div class="container">
                   <h4>Vandal</h4>
                 </div>
@@ -157,19 +176,19 @@
               <h4>Elérhetőségeink:</h4>
               <p class="social-icons">
                   <a href="mailto:valorantbemutato@gmail.com" target="_blank">
-                    <img src="/img/Ikonok/gmail.png" alt="Gmail">
+                    <img src="../img/Ikonok/gmail.png" alt="Gmail">
                     valorantbemutato@gmail.com
                   </a>
               </p>
               <p class="social-icons">
                   <a href="https://facebook.com/valorant_bemutato" target="_blank">
-                      <img src="/img/Ikonok/facebook.png" alt="Facebook"> 
+                      <img src="../img/Ikonok/facebook.png" alt="Facebook"> 
                       valorant_bemutato
                   </a>
               </p>
               <p class="social-icons">
                   <a href="https://instagram.com/Valorant_bemutato" target="_blank">
-                      <img src="/img/Ikonok/instagram.png" alt="Instagram"> 
+                      <img src="../img/Ikonok/instagram.png" alt="Instagram"> 
                       Valorant_bemutato
                   </a>
               </p>
