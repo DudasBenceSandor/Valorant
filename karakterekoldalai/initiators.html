@@ -129,19 +129,39 @@
             });
         }
     </script>
-      <header>
-        <nav>
-          <div class="nav-menu">
-            <ul class="nav">
-                <li><a href="/főoldal.html">Valorant</a></li>
-                <li><a href="/főoldal.html">Főoldal</a></li>
-                <li><a href="/fegyverek.html">Fegyverek</a></li>
-                <li><a href="/pályák.html">Pályák</a></li>
-                <li><a href="/karakterek.html">Karakterek</a></li>
-                <li><a href="/esport.html">Esport</a></li>
-          </div>
-            </ul>
-        </nav>
+    <script>
+      function toggleMenu() {
+          const navMenu = document.querySelector('.nav');
+          navMenu.classList.toggle('active');
+      }
+  
+      function closeMenu() {
+          const navMenu = document.querySelector('.nav');
+          navMenu.classList.remove('active');
+      }
+      </script>
+      <div id="container">
+          <header>
+          <nav>
+              <div class="nav-menu">
+              <ul class="nav">
+                  <div class="logo">
+                      <a href="/főoldal.html">Valorant</a>
+                  </div>
+                  <li><a href="/főoldal.html">Főoldal</a></li>
+                  <li><a href="/fegyverek.html">Fegyverek</a></li>
+                  <li><a href="/pályák.html">Pályák</a></li>
+                  <li><a href="/karakterek.html">Karakterek</a></li>
+                  <li><a href="/esport.html">Esport</a></li>
+                  <li><a href="/javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
+              </ul>
+              <div class="menu-toggle" onclick="toggleMenu()">
+                  <div class="hamburger"></div>
+                  <div class="hamburger"></div>
+                  <div class="hamburger"></div>
+              </div>
+              </div>
+          </nav>
       </header>
       <main>
         <aside class="banner">
