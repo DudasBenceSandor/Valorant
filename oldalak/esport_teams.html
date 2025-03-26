@@ -1,117 +1,130 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/cookies/cookie.css">
-    <link rel="stylesheet" href="esport_teams.css">
-    <title>Valorant Esport Teams</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/esport_teams.css">
 </head>
 <body>
-    <div id="overlay">
-        <div id="consentBox">
-            <img src="/img/Ikonok/cookie.png" alt="Cookie Icon">
-            <div id="consentContent">
-                <header id="consentHeader">Sütik</header>
-                <p>
-                    Sütiket használunk a felhasználók kényelme érdekében. <br>
-                    Az adatvédelmi információk itt találhatóak meg: 
-                    <br><a href="/cookies/adatvedelmi.html">Adatvédelem dokumentumok</a>
-                </p>
-                <div class="buttons">
-                    <button class="consentButton">Sütik elfogadása</button>
-                    <button class="rejectButton">Sütik elutasítása</button>
-                </div>
-            </div>
-        </div>
-    </div>
-        <script src="/cookies/cookie.js"></script>
+
     <script>
         function toggleMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('active');
         }
-    
-        function closeMenu() {
-            const navMenu = document.querySelector('.nav');
-            navMenu.classList.remove('active');
-        }
-        </script>
-        <div id="container">
-            <header>
-            <nav>
-                <div class="nav-menu">
+    </script>
+
+    <header>
+        <nav>
+            <div class="nav-menu">
+                <div class="logo">
+                    <a href="/index.html">Valorant</a>
+                </div>
                 <ul class="nav">
-                    <div class="logo">
-                        <a href="/index.html">Valorant</a>
-                    </div>
                     <li><a href="/index.html">Főoldal</a></li>
-                    <li><a href="/fegyverek.html">Fegyverek</a></li>
-                    <li><a href="/pályák.html">Pályák</a></li>
-                    <li><a href="/karakterek.html">Karakterek</a></li>
-                    <li><a href="/esport.html">Esport</a></li>
-                    <li><a href="/javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
+                    <li><a href="/oldalak/fegyverek.html">Fegyverek</a></li>
+                    <li><a href="/oldalak/pályák.html">Pályák</a></li>
+                    <li><a href="/oldalak/karakterek.html">Karakterek</a></li>
+                    <li><a href="/oldalak/esport.html">Esport</a></li>
                 </ul>
                 <div class="menu-toggle" onclick="toggleMenu()">
                     <div class="hamburger"></div>
                     <div class="hamburger"></div>
                     <div class="hamburger"></div>
                 </div>
-                </div>
-            </nav>
-        </header>
-        <div class="banner">
-            <img src="/img/Esport/fooldal kep.jpg" alt="Valorant Esport">
-        </div>
-        <main>
-            <section class="card-container">
-                <div class="card">
-                    <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Teams"> 
-                    <div class="container">
-                        <h4>Gen G</h4>
-                    </div>
-                </div>
-                <div class="card">
-                  <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Teams"> 
-                  <div class="container">
-                      <h4>Gen G</h4>
-                  </div>
-              </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-section">
-                    <h4>A weboldal készítői:</h4>
-                    <p>Dudás Bence Sándor</p>
-                    <p>Chen Haole</p>
-                    <p>Kovács Damjan</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Elérhetőségeink:</h4>
-                    <p class="social-icons">
-                        <a href="mailto:valorantbemutato@gmail.com" target="_blank">
-                            <img src="/img/Ikonok/gmail.png" alt="Gmail">
-                            valorantbemutato@gmail.com
-                        </a>
-                        </p>
-                    <p class="social-icons">
-                        <a href="https://facebook.com/valorant_bemutato" target="_blank">
-                            <img src="/img/Ikonok/facebook.png" alt="Facebook"> 
-                            valorant_bemutato
-                        </a>
-                    </p>
-                    <p class="social-icons">
-                        <a href="https://instagram.com/Valorant_bemutato" target="_blank">
-                            <img src="/img/Ikonok/instagram.png" alt="Instagram"> 
-                            valorant_bemutato
-                        </a>
-                    </p>
-                </div>
             </div>
-        </footer>
-    </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+            <div class="card">
+                <img class="kép" src="/img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <h4>Gen G</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>A weboldal készítői:</h4>
+                <p>Dudás Bence Sándor</p>
+                <p>Chen Haole</p>
+                <p>Kovács Damjan</p>
+            </div>
+            <div class="footer-section">
+                <h4>Elérhetőségeink:</h4>
+                <p class="social-icons">
+                    <a href="mailto:valorantbemutato@gmail.com"><img src="/img/Ikonok/gmail.png" alt="Gmail"> valorantbemutato@gmail.com</a>
+                </p>
+                <p class="social-icons">
+                    <a href="https://facebook.com/valorant_bemutato"><img src="/img/Ikonok/facebook.png" alt="Facebook"> valorant_bemutato</a>
+                </p>
+                <p class="social-icons">
+                    <a href="https://instagram.com/Valorant_bemutato"><img src="/img/Ikonok/instagram.png" alt="Instagram"> valorant_bemutato</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
