@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pályák_style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Pályák</title>
 </head>
 <body>
@@ -126,33 +126,42 @@
             });
         }
       </script>
-      </script>
+      <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.toggle('active');
+        }
+    
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.remove('active');
+        }
+        </script>
       <header>
         <nav>
-          <div class="nav-menu">
-            <ul class="nav">
+            <div class="nav-menu">
                 <div class="logo">
-                  <a href="../index.html">Valorant</a>
+                    <a href="../index.html">Valorant</a>
                 </div>
-                <li><a href="../index.html">Főoldal</a></li>
-                <li><a href="../oldalak/fegyverek.html">Fegyverek</a></li>
-                <li><a href="../oldalak/pályák.html">Pályák</a></li>
-                <li><a href="../oldalak/karakterek.html">Karakterek</a></li>
-                <li><a href="../oldalak/esport.html">Esport</a></li>
-                <li><a href="../javascript:void(0);" class="closebtn" onclick="closeMenu()"></a></li>
-            </ul>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
+                <ul class="nav">
+                    <li><a href="../index.html">Főoldal</a></li>
+                    <li><a href="../oldalak/fegyverek.html">Fegyverek</a></li>
+                    <li><a href="../oldalak/pályák.html">Pályák</a></li>
+                    <li><a href="../oldalak/karakterek.html">Karakterek</a></li>
+                    <li><a href="../oldalak/esport.html">Esport</a></li>
+                </ul>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </div>
             </div>
-          </div>
         </nav>
+        <div class="banner">
+          <img src="../img/Mapok/abyss.png" alt="">
+        </div>
       </header>
       <main>
-        <aside class="banner">
-          <img src="../img/Mapok/banner.png" alt="">
-        </aside>
         <section class="card-container">
           <div class="card">
             <img onclick="openModal('myModal1')" src="../img/Mapok/abyss.png" alt="Abyss">
