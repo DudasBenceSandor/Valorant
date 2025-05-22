@@ -13,6 +13,10 @@ header{
     background-color: #53212B;
 }
 
+#consentHeader{
+    background-color: white
+}
+
 /* Navigációs menü */
 .nav-menu {
     width: 100%;
@@ -274,7 +278,7 @@ h4 {
         width: fit-content;
         transition: all 0.3s;
     }
-    .card:hover {
+    .card::before {
         transform: scale(1.05);
         box-shadow: 0 0 20px #FD4556;;
     }
@@ -285,5 +289,11 @@ h4 {
     }
     .footer{
         padding: 50px;
+    }
+    .banner{
+        display: none;
+    }
+    main{
+        margin-top: 50px;
     }
 }
