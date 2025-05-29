@@ -250,7 +250,11 @@ h4 {
 }
 
 /* Reszponzív dizájn */
-@media screen and (max-width: 768px) {
+/*Telefon*/
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    body{
+        height: auto;
+    }
     .nav {
         display: none;
         flex-direction: column;
@@ -295,5 +299,68 @@ h4 {
     }
     main{
         margin-top: 50px;
+    }
+}
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        height: auto;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #FD4556;
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+    .nav.active:hover{
+        animation: 0.3s;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .card {
+        width: fit-content;
+        transition: all 0.3s;
+    }
+    .card::before {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #FD4556;;
+    }
+
+    .card:hover::before {
+        opacity: 1;
+        transform: rotate(-45deg) translateY(100%);
+    }
+    .footer{
+        padding: 50px;
+    }
+    main{
+        margin-top: 50px;
+    }
+    #container{
+        margin-bottom: auto;
+        width: auto;
+        height: auto;
+    }
+    .banner{
+        margin-bottom: auto;
+        width: auto;
+        height: auto;
+    }
+    body{
+        margin-bottom: auto;
+        width: auto;
+        height: auto;
     }
 }
