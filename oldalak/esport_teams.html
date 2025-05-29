@@ -10,30 +10,36 @@
 
     <script>
         function toggleMenu() {
-            document.querySelector('.nav').classList.toggle('active');
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.toggle('active');
         }
-    </script>
-
-    <header>
-        <nav>
-            <div class="nav-menu">
-                <div class="logo">
-                    <a href="../index.html">Valorant</a>
+      
+        function closeMenu() {
+            const navMenu = document.querySelector('.nav');
+            navMenu.classList.remove('active');
+        }
+      </script>
+        <div id="container">
+          <header>
+            <nav>
+                <div class="nav-menu">
+                    <div class="logo">
+                        <a href="../index.html">Valorant</a>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="../index.html">Főoldal</a></li>
+                        <li><a href="../oldalak/fegyverek.html">Fegyverek</a></li>
+                        <li><a href="../oldalak/pályák.html">Pályák</a></li>
+                        <li><a href="../oldalak/karakterek.html">Karakterek</a></li>
+                        <li><a href="../oldalak/esport.html">Esport</a></li>
+                    </ul>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                        <div class="hamburger"></div>
+                    </div>
                 </div>
-                <ul class="nav">
-                    <li><a href="../index.html">Főoldal</a></li>
-                    <li><a href="../oldalak/fegyverek.html">Fegyverek</a></li>
-                    <li><a href="../oldalak/pályák.html">Pályák</a></li>
-                    <li><a href="../oldalak/karakterek.html">Karakterek</a></li>
-                    <li><a href="../oldalak/esport.html">Esport</a></li>
-                </ul>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                    <div class="hamburger"></div>
-                </div>
-            </div>
-        </nav>
+            </nav>
     </header>
 
     <main>
