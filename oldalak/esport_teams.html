@@ -42,67 +42,206 @@
             </nav>
     </header>
 
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            let modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+    </script>
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <h1 class="modalcim">Gen G</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <h1 class="modalcim">100 Thieves</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal3')">&times;</span>
+            <h1 class="modalcim">Shopify Rebellion</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal4')">&times;</span>
+            <h1 class="modalcim">Leviatan</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+            <h1 class="modalcim">BBL Esports</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal6')">&times;</span>
+            <h1 class="modalcim">KRÜ Esports</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal7')">&times;</span>
+            <h1 class="modalcim">Heretics</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal8')">&times;</span>
+            <h1 class="modalcim">Evil Geniuses</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal9')">&times;</span>
+            <h1 class="modalcim">Sentinels</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal10')">&times;</span>
+            <h1 class="modalcim">Dplus</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal11')">&times;</span>
+            <h1 class="modalcim">EDward Gaming</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal12')">&times;</span>
+            <h1 class="modalcim">G2 Esports</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal13" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal13')">&times;</span>
+            <h1 class="modalcim">Paper Rex</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal14" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal14')">&times;</span>
+            <h1 class="modalcim">DRX</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+      <div id="myModal15" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('myModal15')">&times;</span>
+            <h1 class="modalcim">Fnatic</h1>
+            <p class="modalp">
+            </p>
+        </div>
+      </div>
+
     <main>
         <section class="card-container">
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
+                <img onclick="openModal('myModal1')" class="kép" src="../img/Esport/Teams/500px-Gen.G_Esports_2019_full_lightmode.png" alt="Gen G"> 
                 <h4>Gen G</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/100_Thieves_logo.svg.png" alt="100 Thieves"> 
+                <img onclick="openModal('myModal2')" class="kép" src="../img/Esport/Teams/100_Thieves_logo.svg.png" alt="100 Thieves"> 
                 <h4>100 Thieves</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/405px-Shopify_Rebellion_Black_lightmode.png" alt="Shopify Rebellion"> 
+                <img onclick="openModal('myModal3')" class="kép" src="../img/Esport/Teams/405px-Shopify_Rebellion_Black_lightmode.png" alt="Shopify Rebellion"> 
                 <h4>Shopify Rebellion</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/462px-Leviatan_2023_full_allmode.png" alt="Leviatan"> 
+                <img onclick="openModal('myModal4')" class="kép" src="../img/Esport/Teams/462px-Leviatan_2023_full_allmode.png" alt="Leviatan"> 
                 <h4>Leviatan</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/600px-BBL_Esports_2022_full_lightmode.png" alt="BBL"> 
+                <img onclick="openModal('myModal5')" class="kép" src="../img/Esport/Teams/600px-BBL_Esports_2022_full_lightmode.png" alt="BBL"> 
                 <h4>BBL Esports</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/600px-KRU_Esports_full_darkmode.png" alt="KRÜ"> 
+                <img onclick="openModal('myModal6')" class="kép" src="../img/Esport/Teams/600px-KRU_Esports_full_darkmode.png" alt="KRÜ"> 
                 <h4>KRÜ Esports</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/600px-Team_Heretics_2022_full_darkmode.png" alt="Heretics"> 
+                <img onclick="openModal('myModal7')" class="kép" src="../img/Esport/Teams/600px-Team_Heretics_2022_full_darkmode.png" alt="Heretics"> 
                 <h4>Heretics</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/Evil_geniuses_logo.svg.png" alt="Evil Geniuses"> 
+                <img onclick="openModal('myModal8')" class="kép" src="../img/Esport/Teams/Evil_geniuses_logo.svg.png" alt="Evil Geniuses"> 
                 <h4>Evil Geniuses</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/799px-Sentinels_2020_full_lightmode.png" alt="Sentinels"> 
+                <img onclick="openModal('myModal9')" class="kép" src="../img/Esport/Teams/799px-Sentinels_2020_full_lightmode.png" alt="Sentinels"> 
                 <h4>Sentinels</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/800px-Dplus_lightmode.png" alt="DPLUS"> 
+                <img onclick="openModal('myModal10')" class="kép" src="../img/Esport/Teams/800px-Dplus_lightmode.png" alt="DPLUS"> 
                 <h4>Dplus</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/800px-Edward_Gaming_logo.png" alt="EDG"> 
+                <img onclick="openModal('myModal11')" class="kép" src="../img/Esport/Teams/800px-Edward_Gaming_logo.png" alt="EDG"> 
                 <h4>EDward Gaming</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/800px-G2_Esports_2020_full_lightmode.png" alt="G2"> 
+                <img onclick="openModal('myModal12')" class="kép" src="../img/Esport/Teams/800px-G2_Esports_2020_full_lightmode.png" alt="G2"> 
                 <h4>G2 Esports</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/800px-Paper_Rex_lightmode_full.png" alt="Paper Rex"> 
+                <img onclick="openModal('myModal13')" class="kép" src="../img/Esport/Teams/800px-Paper_Rex_lightmode_full.png" alt="Paper Rex"> 
                 <h4>Paper Rex</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/DRX_logo_2023.png" alt="DRX"> 
+                <img onclick="openModal('myModal14')" class="kép" src="../img/Esport/Teams/DRX_logo_2023.png" alt="DRX"> 
                 <h4>DRX</h4>
             </div>
             <div class="card">
-                <img class="kép" src="../img/Esport/Teams/Esports_organization_Fnatic_logo.svg.png" alt="Gen G"> 
-                <h4>Gen G</h4>
+                <img onclick="openModal('myModal15')" class="kép" src="../img/Esport/Teams/Esports_organization_Fnatic_logo.svg.png" alt="Gen G"> 
+                <h4>Fnatic</h4>
             </div>
         </section>
     </main>
